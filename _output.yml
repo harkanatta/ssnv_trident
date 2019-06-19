@@ -1,0 +1,15 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+  
+    toc:
+      before: |
+          <li class='before'><a href="./">Skýrsla fyrir SSNV</a></li>
+      after: |
+         <li class='after'">
+            <a href="https://biopol.is/">
+               <img src="myndir/zeropoint_logo.jpg" style="width:25%; padding:0px 0; display:block; margin: 0 auto;" alt="BioPol logo">
+            </a>
+         </li>
+
+output_dir: "docs"
