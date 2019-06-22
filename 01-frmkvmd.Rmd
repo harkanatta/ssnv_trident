@@ -18,7 +18,7 @@ knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 
 Þann 11. júní 2019 fór undirritaður á kajak frá Hrafná innan við Skagaströnd til að kanna mörk þaraskógarins á milli Eyrarinnar og Skeljatanga (sjá kort). Daginn eftir var farið út á sama svæði, á kajak, með drónann til að athuga tegundasamsetningu þarans og vöxt. Kajakinn var bundinn við netabauju til að reka ekki og myndir teknar með drónanum í kringum baujuna.
 
-```{r mapview, echo=FALSE, error=F, message=FALSE, warning=FALSE, comment=NA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.',out.width='100%'}
+```{r mapv, echo=FALSE, error=F, message=FALSE, warning=FALSE, comment=NA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.',out.width='100%'}
 library(XML)
 library(OpenStreetMap)
 library(lubridate)
@@ -116,7 +116,7 @@ mapview(kajak)+mapview(sk1,color="red",col.regions="grey")
 
 Farið var á Zodiac inn að Sölvabakka
 
-```{r mapview, echo=FALSE, error=F, message=FALSE, warning=FALSE, comment=NA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.',out.width='100%'}
+```{r mapviewsk2, echo=FALSE, error=F, message=FALSE, warning=FALSE, comment=NA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.',out.width='100%'}
 library(XML)
 library(OpenStreetMap)
 library(lubridate)
