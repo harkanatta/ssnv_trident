@@ -154,7 +154,7 @@ lons <- as.numeric(coords["lon",])
 geodf <- data.frame(lat = lats, lon = lons, ele = elevations, time = times)
 rm(list=c("elevations", "lats", "lons", "pfile", "times", "coords"))
 #geodf <- geodf[isoyear(geodf$time)>2018,]
-geodf <- geodf[680:1153,]
+#geodf <- geodf[680:1153,]
 #head(geodf)
 
 
