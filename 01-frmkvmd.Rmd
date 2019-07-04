@@ -107,14 +107,16 @@ coordinates(kajak) <- ~ lon + lat
 proj4string(kajak) <- "+init=epsg:4326"
 #class(spdf_geo)
 sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp")
-mapview(kajak)+mapview(sk1,color="red",col.regions="grey")
+mapview(kajak,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(sk1,color="red",col.regions="grey")
 
 #mapview(spdf_geo,map.types="Esri.WorldImagery")
 
 
 ```
 
-Farið var á Zodiac inn að Sölvabakka
+## Forkönnun við Stekkjavík og Sölvabakka 2019
+
+Farið var á Zodiac inn að Sölvabakka föstudaginn 21. júní. Báturinn er í eigu björgunarsveitrinnar Stráka á Skagaströnd, Einn maður um borð og var Trident kafbáturinn meðferðis. Kafbáturinn var settur niður á þremur stöðum á milli Stekkjavíkur og Sölvabakka
 
 ```{r mapviewsk2, echo=FALSE, error=F, message=FALSE, warning=FALSE, comment=NA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.',out.width='100%'}
 library(XML)
@@ -200,14 +202,15 @@ geodf$lowess.ele <- lowess(geodf$ele, f = 0.2)$y
 library(mapview)
 #class(geodf)
 
-kajak <- geodf
-coordinates(kajak) <- ~ lon + lat
-proj4string(kajak) <- "+init=epsg:4326"
+Zodiac <- geodf
+coordinates(Zodiac) <- ~ lon + lat
+proj4string(Zodiac) <- "+init=epsg:4326"
 #class(spdf_geo)
 #sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp")
-mapview(kajak)#+mapview(sk1,color="red",col.regions="grey")
+mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")#+mapview(sk1,color="red",col.regions="grey")
 
 #mapview(spdf_geo,map.types="Esri.WorldImagery")
 
 
 ```
+
