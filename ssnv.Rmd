@@ -59,9 +59,12 @@ Tilgangur verkefnisins er að gera forkönnun á nýtingu þaraskóga við austa
 
 Þann 6. september 2018 var svæðið úti fyrir Finnstaðanesi kannað með kafbátnum. Farið var á báti björgunarsveitarinnar Strandar við fjórða mann. Myndskeið voru tekin upp frá 3 til 21 metra dýpis. Ferðin tók um eina og hálfa klukkustund en þá var undirritaður orðinn sjóveikur af því að stara á skjáinn og einnig var bilun í báðum mótorum bátsins. Myndefnið var greint af rannsóknarfólki BioPol til að bera kennsl á helstu tegundir í þaraskóginum.
 
+```{r setup-options}
+ knitr::opts_chunk$set(	echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE)
+```
 
-```{r trident, fig.cap='Tækið sem fékkst fyrir styrkféð frá SSNV kallast [Trident](https://www.openrov.com/) og er framleitt af OpenRov. Hér sést Karin Zech starfsmaður BioPol rýna á skjáinn á fjarstýringunni að tækinu og Guðmundur Björnsson fyrrv. grásleppuveiðimaður var okkur til halds og trausts. ', out.width='35%', fig.align='center', echo=FALSE, fig.show = 'hold'}
-#knitr::opts_chunk$set(error = TRUE)
+```{r trident, fig.cap='Tækið sem fékkst fyrir styrkféð frá SSNV kallast [Trident](https://www.openrov.com/) og er framleitt af OpenRov. Hér sést Karin Zech starfsmaður BioPol rýna á skjáinn á fjarstýringunni að tækinu og Guðmundur Björnsson fyrrv. grásleppuveiðimaður var okkur til halds og trausts. ', out.width='35%', fig.show = 'hold'}
+
 knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 ```
 
@@ -70,7 +73,9 @@ knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 
 Þann 11. júní 2019 fór undirritaður á kajak frá Hrafná innan við Skagaströnd til að kanna mörk þaraskógarins á milli Eyrarinnar og Skeljatanga (sjá kort). Daginn eftir var farið út á sama svæði, á kajak, með drónann til að athuga tegundasamsetningu þarans og vöxt. Kajakinn var bundinn við netabauju til að reka ekki og myndir teknar með drónanum í kringum baujuna.
 
-```{r mapv, echo=FALSE, error=F, message=FALSE, warning=FALSE, comment=NA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.',out.width='100%'}
+
+
+```{r mapviewskA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.'}
 library(XML)
 library(OpenStreetMap)
 library(lubridate)
@@ -158,7 +163,7 @@ kajak <- geodf
 coordinates(kajak) <- ~ lon + lat
 proj4string(kajak) <- "+init=epsg:4326"
 #class(spdf_geo)
-sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp")
+sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp",verbose = FALSE)
 mapview(kajak,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(sk1,color="red",col.regions="grey")
 
 #mapview(spdf_geo,map.types="Esri.WorldImagery")
@@ -170,7 +175,7 @@ mapview(kajak,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapv
 
 Farið var á Zodiac inn að Sölvabakka föstudaginn 21. júní. Báturinn er í eigu björgunarsveitrinnar Stráka á Skagaströnd, Einn maður um borð og var Trident kafbáturinn meðferðis. Kafbáturinn var settur niður á þremur stöðum á milli Stekkjavíkur og Sölvabakka
 
-```{r mapviewsk2, echo=FALSE, error=F, message=FALSE, warning=FALSE, comment=NA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.',out.width='100%'}
+```{r mapviewskB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.'}
 library(XML)
 library(OpenStreetMap)
 library(lubridate)
@@ -260,13 +265,18 @@ coordinates(Zodiac) <- ~ lon + lat
 proj4string(Zodiac) <- "+init=epsg:4326"
 #class(spdf_geo)
 #sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp")
-rass=rgdal::readOGR(dsn="C:/Users/BioPol VS/Documents/Vinnumappa/GIS/Isl_dlin_shape/Isl_dyp_lin_290115.shp")
-#búa til kassalaga svæði
-library(sp)
-e <- as(raster::extent(-21.51, -20,65.38, 66.1), "SpatialPolygons")
-#e <- as(raster::extent(bbox(Zodiac)[1]+bbox(Zodiac)[1]*0.01,bbox(Zodiac)[3]+bbox(Zodiac)[3]*(-0.01),bbox(Zodiac)[2]-bbox(Zodiac)[2]*0.001,bbox(Zodiac)[4]+bbox(Zodiac)[4]*0.001), "SpatialPolygons")
-proj4string(e) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
-e2 <- sp::spTransform(e, raster::crs(rass))
+rass=rgdal::readOGR(dsn="C:/Users/BioPol VS/Documents/Vinnumappa/GIS/Isl_dlin_shape/Isl_dyp_lin_290115.shp",verbose = FALSE)
+
+#búa til hringlaga svæði
+library(sampSurf)
+
+Radius = 0.2
+midjaX=(bbox(Zodiac)[1]+bbox(Zodiac)[3])/2
+midjaY=(bbox(Zodiac)[2]+bbox(Zodiac)[4])/2
+hringur = spCircle(radius = Radius, centerPoint=c(x=midjaX,y=midjaY), spID='ekkert') 
+
+proj4string(hringur$spCircle) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+e2 <- sp::spTransform(hringur$spCircle, raster::crs(rass))
 clp1 <- raster::crop(rass,e2)
 library(RColorBrewer)
 pal <- colorRampPalette(brewer.pal(length(unique(clp1@data$MinZ)), "Blues"))
@@ -280,7 +290,7 @@ mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+map
 Við Einar...
 
 
-```{r mapviewsk3, echo=FALSE, error=F, message=FALSE, warning=FALSE, comment=NA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.',out.width='100%'}
+```{r mapviewskC, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.'}
 library(XML)
 library(OpenStreetMap)
 library(lubridate)
@@ -369,13 +379,18 @@ coordinates(Zodiac) <- ~ lon + lat
 proj4string(Zodiac) <- "+init=epsg:4326"
 #class(spdf_geo)
 #sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp")
-rass=rgdal::readOGR(dsn="C:/Users/BioPol VS/Documents/Vinnumappa/GIS/Isl_dlin_shape/Isl_dyp_lin_290115.shp")
-#búa til kassalaga svæði
-library(sp)
-e <- as(raster::extent(-21.51, -20,65.38, 66.1), "SpatialPolygons")
-#e <- as(raster::extent(bbox(Zodiac)[1]+bbox(Zodiac)[1]*0.01,bbox(Zodiac)[3]+bbox(Zodiac)[3]*(-0.01),bbox(Zodiac)[2]-bbox(Zodiac)[2]*0.001,bbox(Zodiac)[4]+bbox(Zodiac)[4]*0.001), "SpatialPolygons")
-proj4string(e) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
-e2 <- sp::spTransform(e, raster::crs(rass))
+rass=rgdal::readOGR(dsn="C:/Users/BioPol VS/Documents/Vinnumappa/GIS/Isl_dlin_shape/Isl_dyp_lin_290115.shp",verbose = FALSE)
+
+#búa til hringlaga svæði
+library(sampSurf)
+
+Radius = 0.2
+midjaX=(bbox(Zodiac)[1]+bbox(Zodiac)[3])/2
+midjaY=(bbox(Zodiac)[2]+bbox(Zodiac)[4])/2
+hringur = spCircle(radius = Radius, centerPoint=c(x=midjaX,y=midjaY), spID='ekkert') 
+
+proj4string(hringur$spCircle) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+e2 <- sp::spTransform(hringur$spCircle, raster::crs(rass))
 clp1 <- raster::crop(rass,e2)
 library(RColorBrewer)
 pal <- colorRampPalette(brewer.pal(length(unique(clp1@data$MinZ)), "Blues"))
@@ -393,7 +408,7 @@ Við Addi...
  
 
 
-```{r mapviewsk4, echo=FALSE, error=F, message=FALSE, warning=FALSE, comment=NA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.',out.width='100%'}
+```{r mapviewskD, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.'}
 library(XML)
 library(OpenStreetMap)
 library(lubridate)
@@ -486,19 +501,22 @@ coordinates(Zodiac) <- ~ lon + lat
 proj4string(Zodiac) <- "+init=epsg:4326"
 #class(spdf_geo)
 #sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp")
-rass=rgdal::readOGR(dsn="C:/Users/BioPol VS/Documents/Vinnumappa/GIS/Isl_dlin_shape/Isl_dyp_lin_290115.shp")
-#búa til kassalaga svæði
-library(sp)
-e <- as(raster::extent(-21.51, -20,65.38, 66.1), "SpatialPolygons")
-#e <- as(raster::extent(bbox(Zodiac)[1]+bbox(Zodiac)[1]*0.01,bbox(Zodiac)[3]+bbox(Zodiac)[3]*(-0.01),bbox(Zodiac)[2]-bbox(Zodiac)[2]*0.001,bbox(Zodiac)[4]+bbox(Zodiac)[4]*0.001), "SpatialPolygons")
-proj4string(e) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
-e2 <- sp::spTransform(e, raster::crs(rass))
+rass=rgdal::readOGR(dsn="C:/Users/BioPol VS/Documents/Vinnumappa/GIS/Isl_dlin_shape/Isl_dyp_lin_290115.shp",verbose = FALSE)
+
+#búa til hringlaga svæði
+library(sampSurf)
+
+Radius = 0.2
+midjaX=(bbox(Zodiac)[1]+bbox(Zodiac)[3])/2
+midjaY=(bbox(Zodiac)[2]+bbox(Zodiac)[4])/2
+hringur = spCircle(radius = Radius, centerPoint=c(x=midjaX,y=midjaY), spID='ekkert') 
+
+proj4string(hringur$spCircle) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+e2 <- sp::spTransform(hringur$spCircle, raster::crs(rass))
 clp1 <- raster::crop(rass,e2)
 library(RColorBrewer)
 pal <- colorRampPalette(brewer.pal(length(unique(clp1@data$MinZ)), "Blues"))
 mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(clp1,zcol="MinZ",color = pal)
-
-#mapview(spdf_geo,map.types="Esri.WorldImagery")
 
 
 ```
