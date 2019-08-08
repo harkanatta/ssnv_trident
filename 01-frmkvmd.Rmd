@@ -206,30 +206,14 @@ geodf$lowess.ele <- lowess(geodf$ele, f = 0.2)$y
 # plot(rev(geodf$lon), rev(geodf$lat), type = "l", col = "red", lwd = 3, bty = "n", ylab = "Latitude", xlab = "Longitude")
 
 library(mapview)
-#class(geodf)
-
 
 Zodiac <- geodf
 coordinates(Zodiac) <- ~ lon + lat
 proj4string(Zodiac) <- "+init=epsg:4326"
-#class(spdf_geo)
-#sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp")
-rass=rgdal::readOGR(dsn="C:/Users/BioPol VS/Documents/Vinnumappa/GIS/Isl_dlin_shape/Isl_dyp_lin_290115.shp",verbose = FALSE)
-
-#búa til hringlaga svæði
-library(sampSurf)
-
-Radius = 0.2
-midjaX=(bbox(Zodiac)[1]+bbox(Zodiac)[3])/2
-midjaY=(bbox(Zodiac)[2]+bbox(Zodiac)[4])/2
-hringur = spCircle(radius = Radius, centerPoint=c(x=midjaX,y=midjaY), spID='ekkert') 
-
-proj4string(hringur$spCircle) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
-e2 <- sp::spTransform(hringur$spCircle, raster::crs(rass))
-clp1 <- raster::crop(rass,e2)
+hringur<- rgdal::readOGR(dsn="skjol/skogar/sk2/klipp.shp", verbose = FALSE)
 library(RColorBrewer)
-pal <- colorRampPalette(brewer.pal(length(unique(clp1@data$MinZ)), "Blues"))
-mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(clp1,zcol="MinZ",color = pal)
+pal <- colorRampPalette(brewer.pal(length(unique(hringur@data$MinZ)), "Blues"))
+mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(hringur,zcol="MinZ",color = pal)
 
 
 ```
@@ -326,25 +310,10 @@ library(mapview)
 Zodiac <- geodf
 coordinates(Zodiac) <- ~ lon + lat
 proj4string(Zodiac) <- "+init=epsg:4326"
-#class(spdf_geo)
-#sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp")
-rass=rgdal::readOGR(dsn="C:/Users/BioPol VS/Documents/Vinnumappa/GIS/Isl_dlin_shape/Isl_dyp_lin_290115.shp",verbose = FALSE)
-
-#búa til hringlaga svæði
-library(sampSurf)
-
-Radius = 0.2
-midjaX=(bbox(Zodiac)[1]+bbox(Zodiac)[3])/2
-midjaY=(bbox(Zodiac)[2]+bbox(Zodiac)[4])/2
-hringur = spCircle(radius = Radius, centerPoint=c(x=midjaX,y=midjaY), spID='ekkert') 
-
-proj4string(hringur$spCircle) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
-e2 <- sp::spTransform(hringur$spCircle, raster::crs(rass))
-clp1 <- raster::crop(rass,e2)
+hringur<- rgdal::readOGR(dsn="skjol/skogar/sk3/klipp.shp", verbose = FALSE)
 library(RColorBrewer)
-pal <- colorRampPalette(brewer.pal(length(unique(clp1@data$MinZ)), "Blues"))
-mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(clp1,zcol="MinZ",color = pal)
-
+pal <- colorRampPalette(brewer.pal(length(unique(hringur@data$MinZ)), "Blues"))
+mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(hringur,zcol="MinZ",color = pal)
 
 ```
 
@@ -443,29 +412,13 @@ geodf$lowess.ele <- lowess(geodf$ele, f = 0.2)$y
 
 
 library(mapview)
-#class(geodf)
-
 Zodiac <- geodf
 coordinates(Zodiac) <- ~ lon + lat
 proj4string(Zodiac) <- "+init=epsg:4326"
-#class(spdf_geo)
-#sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp")
-rass=rgdal::readOGR(dsn="C:/Users/BioPol VS/Documents/Vinnumappa/GIS/Isl_dlin_shape/Isl_dyp_lin_290115.shp",verbose = FALSE)
-
-#búa til hringlaga svæði
-library(sampSurf)
-
-Radius = 0.2
-midjaX=(bbox(Zodiac)[1]+bbox(Zodiac)[3])/2
-midjaY=(bbox(Zodiac)[2]+bbox(Zodiac)[4])/2
-hringur = spCircle(radius = Radius, centerPoint=c(x=midjaX,y=midjaY), spID='ekkert') 
-
-proj4string(hringur$spCircle) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
-e2 <- sp::spTransform(hringur$spCircle, raster::crs(rass))
-clp1 <- raster::crop(rass,e2)
+hringur<- rgdal::readOGR(dsn="skjol/skogar/sk4/klipp.shp", verbose = FALSE)
 library(RColorBrewer)
-pal <- colorRampPalette(brewer.pal(length(unique(clp1@data$MinZ)), "Blues"))
-mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(clp1,zcol="MinZ",color = pal)
+pal <- colorRampPalette(brewer.pal(length(unique(hringur@data$MinZ)), "Blues"))
+mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(hringur,zcol="MinZ",color = pal)
 
 
 ```
