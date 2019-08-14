@@ -49,9 +49,8 @@ Tilgangur verkefnisins er að gera forkönnun á nýtingu þaraskóga við austa
 
 <!--chapter:end:index.Rmd-->
 
-# Framkvæmd
 
-## Forkönnun við Finnsstaðanes 2018
+# Forkönnun við Finnsstaðanes 2018
 
 Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Nokkur svæði voru valin til frekari skoðunar með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)). 
 
@@ -69,13 +68,14 @@ knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 ```
 
 
-## Forkönnun við Eyrina 2019
+# Forkönnun við Eyrina 2019
 
-Þann 11. júní 2019 fór undirritaður á kajak frá Hrafná innan við Skagaströnd til að kanna mörk þaraskógarins á milli Eyrarinnar og Skeljatanga (sjá kort). Daginn eftir var farið út á sama svæði, á kajak, með drónann til að athuga tegundasamsetningu þarans og vöxt. Kajakinn var bundinn við netabauju til að reka ekki og myndir teknar með drónanum í kringum baujuna.
+Þann 11. júní 2019 fór undirritaður á kajak frá Hrafná innan við Skagaströnd til að kanna mörk þaraskógarins á milli Eyrarinnar og Skeljatanga (sjá kort). Daginn eftir var farið út á sama svæði, á kajak, með drónann til að athuga tegundasamsetningu þarans og vöxt. Kajakinn var bundinn við netabauju til að reka ekki og myndir teknar með drónanum í kringum baujuna. 
 
 
 
 ```{r mapviewskA, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.'}
+
 library(XML)
 library(OpenStreetMap)
 library(lubridate)
@@ -171,11 +171,13 @@ mapview(kajak,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapv
 
 ```
 
-## Forkönnun við Stekkjavík og Sölvabakka 2019
+# Stekkjavík og Sölvabakki 2019
 
-Farið var á Zodiac inn að Sölvabakka föstudaginn 21. júní. Báturinn er í eigu björgunarsveitrinnar Stráka á Skagaströnd, Einn maður um borð og var Trident kafbáturinn meðferðis. Kafbáturinn var settur niður á þremur stöðum á milli Stekkjavíkur og Sölvabakka
+Farið var á Zodiac inn að Sölvabakka föstudaginn 21. júní. Báturinn er í eigu björgunarsveitrinnar Stráka á Skagaströnd, Einn maður um borð og var Trident kafbáturinn meðferðis. Kafbáturinn var settur niður á þremur stöðum á milli Stekkjavíkur og Sölvabakka. Hlekkur á möppu með [myndskeiðum](https://www.dropbox.com/sh/pcobg1zexnhsm9r/AABOmyp9I87GbuT6qs3SRxWDa?dl=0)
 
-```{r mapviewskB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.'}
+```{r mapviewskB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
+
+
 library(XML)
 library(OpenStreetMap)
 library(lubridate)
@@ -261,16 +263,43 @@ library(mapview)
 Zodiac <- geodf
 coordinates(Zodiac) <- ~ lon + lat
 proj4string(Zodiac) <- "+init=epsg:4326"
-hringur<- rgdal::readOGR(dsn="skjol/skogar/sk2/klipp.shp", verbose = FALSE)
+Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk2/klipp.shp", verbose = FALSE)
+stodvar<- sf::read_sf(dsn="skjol/skogar/sk2/stodvar")
 library(RColorBrewer)
-pal <- colorRampPalette(brewer.pal(length(unique(hringur@data$MinZ)), "Blues"))
-mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(hringur,zcol="MinZ",color = pal)
+pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
+mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(Dypi,zcol="MinZ",color = pal, lwd=0.8)+mapview(stodvar)
 
 
 ```
 
+## Stöð 1
 
-## Forkönnun við Hamarsbúð og Sölvabakka 2019
+```{r mynd-sk-tvo-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Talsvert af *þangskeggi* en einnig sést í öðuskel (*Modiola modiolus*) '}
+
+knitr::include_graphics("skjol/skogar/sk2/stodvar/st1/sk2-st1.jpg")
+
+```
+
+```{r mynd-sk-tvo-stod-eittB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Myndir frá stöð eitt á korti við Stekkjavík og Sölvabakka. Botninn er sendinn með grjóti hér og þar. Sandmaðkshraukar (*Arenicola marina*) og kúfskeljar (*Arctica islandica*) í miklu magni.'}
+
+knitr::include_graphics("skjol/skogar/sk2/stodvar/st2/sk2-st1B.jpg")
+
+```
+
+```{r mynd-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Myndir frá stöð eitt á korti við Stekkjavík og Sölvabakka. Botninn er sendinn með grjóti hér og þar. Sandmaðkshraukar (*Arenicola marina*) og kúfskeljar (*Arctica islandica*) í miklu magni.'}
+
+knitr::include_graphics("skjol/skogar/sk2/stodvar/st2/sk2.jpeg")
+
+```
+
+
+```{r mynd-stod-tvoB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Myndir frá stöð eitt á korti við Stekkjavík og Sölvabakka. Botninn er sendinn með grjóti og klöppum hér og þar. Skeljabrot og leifar af kísilþörungum (*Lithothamnion*) sem ígulker hafa líklega skrapað upp.'}
+
+knitr::include_graphics("skjol/skogar/sk2/stodvar/st2/sk2B.jpeg")
+
+```
+
+# Forkönnun við Hamarsbúð og Sölvabakka 2019
 Við Einar...
 
 
@@ -371,7 +400,7 @@ mapview(Zodiac,color="red",col.regions="grey",map.types="Esri.WorldImagery")+map
 
 
 
-## Forkönnun við Hofsgrunn 2019
+# Forkönnun við Hofsgrunn 2019
 Við Addi... 
 
  
