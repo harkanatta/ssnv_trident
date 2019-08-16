@@ -8,3 +8,5 @@ mapview
 RColorBrewer
 boot
 sampSurf
+magrittr
+jpeg
