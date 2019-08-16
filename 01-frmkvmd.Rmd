@@ -250,7 +250,7 @@ knitr::include_graphics("skjol/skogar/sk2/stodvar/st2/sk2-st2B.jpeg")
 ```
 
 
-# Forkönnun við Hamarsbúð og Sölvabakka 2019
+# Forkönnun við Hamarsbúð og Sauðá 2019
 
 Rannsóknarmenn voru undirritaður og Einar Þorleifsson. Báturinn var sjósettur í fjöru við Hamarsbúð á vestanverðu Vatnsnesi norðan við Hvammstanga. Siglt var í 3-4 kílómetra norður að fyrirætluðum sýnatökustað og virtist vera nokkuð samfelld þarabreiða alla leiðina. 
 

@@ -47,6 +47,20 @@ Tilgangur verkefnisins er að gera forkönnun á nýtingu þaraskóga við austa
 ## Þari til nýtingar á Íslandi
 Þari er samheiti yfir nokkrar tegundir brúnþörunga sem finnast á grunnsævi (allt að 30 metrum) í klappar, hnullunga og grjótfjörum við landið [@karl1997]. Fjölsykrur sem finna má í brúnþörungum eru mikið notaðar sem bindiefni í matvælum, snyrtivörum, lyfjaiðnaði, textiliðnaði og markskonar öðrum iðnaði. Hrossaþari (*L. digitata*) og beltisþari (*L. saccarina*) henta vel í framleiðslu á fjölsykrum en Þörungaverksmiðjan hf. á Reykhólum hefur þurrkað og malað hrossaþara og selt erlendis til alginatframleiðslu (alginat er fjölsykra). Einnig hefur fyrirtækið Purity Herbs á Akureyri notað hrossaþara frá Þörungaverksmiðjunni í sinni framleiðslu [@Jonsdottir2011].
 
+## Um þaraskóga
+
+Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægri hita en 20°C. Uppistaða skóganna eru brúnþörungar af ættkvísl (*genus*) *Laminaria* og þá helst hrossaþari (*L. digitata*), stórþari (*L. hyperborea*), beltisþari (*L. saccharina*) og marinkjarni (*Alaria esculenta* (L.)). Þari þarf fast undilag til að festa sig við, grjót eða klappir, og þrífst því ekki á sand- eða leirbotni. Þari þarfnast sólarljóss sem orkugjafa sem takmarkar útbreiðslu þara niður fyrir ákveðið dýpi sem getur verið misjafnlega mikið eftir skyggni sjávarins en þari hefur fundist á 30 metra dýpi hér við land. Flatarmál grunnsævis undir 50 m í Húnaflóa er sýnt á mynd \ref{fig:fig1}.
+
+```{r dypi,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Grunnsævi í Húnaflóa undir 50 metrum.'}
+
+knitr::include_graphics("myndir/dypi50m.jpg")
+
+```
+
+
+Þari á sér náttúrulega óvini eins og ígulker og snigla. Ekki er endilega þari á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. (Heimildir (Tharaskogar_Levington og thari í Vinnumappa/lesefni))
+
+
 <!--chapter:end:index.Rmd-->
 
 
@@ -301,7 +315,7 @@ knitr::include_graphics("skjol/skogar/sk2/stodvar/st2/sk2-st2B.jpeg")
 ```
 
 
-# Forkönnun við Hamarsbúð og Sölvabakka 2019
+# Forkönnun við Hamarsbúð og Sauðá 2019
 
 Rannsóknarmenn voru undirritaður og Einar Þorleifsson. Báturinn var sjósettur í fjöru við Hamarsbúð á vestanverðu Vatnsnesi norðan við Hvammstanga. Siglt var í 3-4 kílómetra norður að fyrirætluðum sýnatökustað og virtist vera nokkuð samfelld þarabreiða alla leiðina. 
 
