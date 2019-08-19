@@ -58,5 +58,5 @@ knitr::include_graphics("myndir/dypi50m.jpg")
 ```
 
 
-Þari á sér náttúrulega óvini eins og ígulker og snigla. Ekki er endilega þari á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. (Heimildir (Tharaskogar_Levington og thari í Vinnumappa/lesefni))
+Þari á sér náttúrulega óvini eins og ígulker og snigla. Ekki er endilega þari á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. (Heimildir (Tharaskogar_Levington og thari í Vinnumappa/lesefni))
 
