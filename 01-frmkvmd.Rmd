@@ -257,6 +257,8 @@ map %>% leafem::addLogo(img, width = 265/2, height = 200/2,offset.y = 20,offset.
 ```
 
 # Hindisvík 2019
+*Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.*
+Báturinn var sjósettur í fjöru í Hindisvík á norðanverðu Vatnsnesi. Snögglega bætti í sjóinn og því var siglt í land eftir skamma stund við sýnatökur. Aðeins náðist að mynda tvær stöðvar (eina stöð almennilega og örlítið aðra) en þarabreiða var er eflaust í allri víkinni.
 
 ```{r mapviewskE,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
 
@@ -272,3 +274,18 @@ mapview(leidin)
 
 
 ```
+
+```{r mynd-sk-fimm-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 1*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og marinkjarni (*Alaria esculenta*)'}
+
+knitr::include_graphics("skjol/skogar/sk5/stodvar/st1/sk5-st1.jpg")
+
+```
+
+```{r mynd-sk-fimm-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 2*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og marinkjarni (*Alaria esculenta*)'}
+
+knitr::include_graphics("skjol/skogar/sk5/stodvar/st2/sk5-st2.jpg")
+
+```
+
+
+
