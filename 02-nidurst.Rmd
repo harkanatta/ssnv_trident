@@ -20,3 +20,5 @@ knitr::include_graphics("myndir/bettina/Ulva_Corallinaceae_two_species.jpg")
 ```{r thari3, fig.cap='Maríusvunta og botnþörungar', out.width='60%', fig.align='center', echo=FALSE, fig.show = 'hold'}
 knitr::include_graphics("myndir/bettina/fleirikorallarogulva.jpg")
 ```
+
+
