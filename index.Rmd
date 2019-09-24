@@ -56,7 +56,7 @@ Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægr
 
 ```{r dypi,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='60%',	error=FALSE, fig.cap='Grunnsævi í Húnaflóa undir 20 metra dýpi er um 700 ferkílómetrar að flatarmáli.'}
 
-knitr::include_graphics("myndir/feltkort/20mhun.png")
+knitr::include_graphics("myndir/feltkort/20mhun.jpeg")
 
 ```
 
