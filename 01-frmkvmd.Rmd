@@ -1,4 +1,5 @@
 
+
 # Forkönnun við Finnsstaðanes 2018
 *Rannsóknarfólk: undirritaður Karin Zech, Guðmundur Björnsson fyrrverandi grásleppuveiðimaður og Bjarni Ottósson frá björgunarsveitinni.*
 
@@ -157,7 +158,7 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map %>% leafem::addLogo(img, width = '15%', height = '20%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
+map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
 
@@ -165,7 +166,7 @@ map %>% leafem::addLogo(img, width = '15%', height = '20%',offset.y = 20,offset.
 
 ## Stöð 1
 
-```{r mynd-sk-tvo-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Talsvert af „þangskeggi“ eða sambýli af sepum hveldýra (*Hydrozoa*) en einnig sést í öðuskel (*Modiola modiolus*) '}
+```{r mynd-sk-tvo-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Talsvert af „þangskeggi“ eða sambýli af sepum hveldýra (*Hydrozoa*) en einnig sést í öðuskel (*Modiola modiolus*) ofl. '}
 
 knitr::include_graphics("skjol/skogar/sk2/stodvar/st1/sk2-st1.jpg")
 
@@ -214,29 +215,29 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map %>% leafem::addLogo(img, width = '15%', height = '20%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
+map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 ```
 
+```{r mynd-sk-thrju-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
-```{r mynd-sk-thrju-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 2*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
-
-knitr::include_graphics("skjol/skogar/sk3/stodvar/st2/sk3-st2.jpg")
-
-```
-
-Marinkjarni (Alaria esculenta) 
-```{r mynd-sk-thrju-stod-tvoB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 2*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
-
-knitr::include_graphics("skjol/skogar/sk3/stodvar/st2/sk3-st2B.jpg")
+knitr::include_graphics("skjol/skogar/sk3/stodvar/st1/sk3-st1.jpg")
 
 ```
 
- 
-```{r mynd-sk-thrju-stod-tvoC,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 2*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og marinkjarni (*Alaria esculenta*)'}
-
-knitr::include_graphics("skjol/skogar/sk3/stodvar/st2/sk3-st2C.jpg")
-
+```{r mynd-sk-thrju-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþara- eða stórþarabreiður (*Laminaria digitata* eða *Laminaria hyperborea*) (A, B og C). Einnig sést Marinkjarni (Alaria esculenta) og beltisþari (*Saccharina latissima*) á mynd A.'}
+layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
+knitr::include_graphics("skjol/skogar/sk3/stodvar/st2/samsett.jpeg")
 ```
+
+
+
+
+```{r mynd-sk-thrju-stod-thrju-hydrur,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap= '**Stöð 3**. Mynd A og B: Þarabreiðurnar enda og við taka (líklega) breiður af hveldýrum af ættkvísl (e. genus) *Sertularia*. Mynd C: Hveldýrasambýli af tegundinni *Sertularia cupressina* (mynd: [4028mdk09](https://commons.wikimedia.org/w/index.php?curid=9550879) CC eftir-SA 3.0)).'}
+
+knitr::include_graphics(c("skjol/skogar/sk3/stodvar/st3/samsett.jpeg"))
+```
+
+
 
 # Hofsgrunn 2019
 *Rannsóknarfólk: undirritaður og Arnar Viggósson náttúruunnandi.*
@@ -264,8 +265,25 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map %>% leafem::addLogo(img, width = '15%', height = '20%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
+map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
+```
+
+```{r mynd-sk-fjogur-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþara- eða stórþarabreiður (*Laminaria digitata* eða *Laminaria hyperborea*).'}
+layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
+knitr::include_graphics("skjol/skogar/sk4/stodvar/st1/samsett.jpeg")
+```
+
+
+```{r mynd-sk-fjogur-stodvar-tvo-4,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap='**Stöð 2,3,4**. Hrossaþara- eða stórþarabreiður (*Laminaria digitata* eða *Laminaria hyperborea*).'}
+layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
+knitr::include_graphics("skjol/skogar/sk4/samsett.jpeg")
+```
+
+
+```{r mynd-sk-fjogur-stod-fimm,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap='**Stöð 5**. Á 40 m dýpi er enginn þari.'}
+layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
+knitr::include_graphics("skjol/skogar/sk4/stodvar/st5/sk4-st5.jpeg")
 ```
 
 # Hindisvík 2019
@@ -287,13 +305,13 @@ mapview(leidin)
 
 ```
 
-```{r mynd-sk-fimm-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 1*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og marinkjarni (*Alaria esculenta*)'}
+```{r mynd-sk-fimm-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk5/stodvar/st1/sk5-st1.jpg")
 
 ```
 
-```{r mynd-sk-fimm-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 2*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og marinkjarni (*Alaria esculenta*)'}
+```{r mynd-sk-fimm-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk5/stodvar/st2/sk5-st2.jpg")
 

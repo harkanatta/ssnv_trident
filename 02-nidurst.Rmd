@@ -3,21 +3,21 @@
 Út frá myndskeiðunum sem tekin voru úti fyrir Finnstaðanesi mátti greina þarategundirnar stórþara (*L. hyperborea*) og hrossaþara (*L. digitata*) en einnig mátti sjá aðrar tegundir nytjaþörunga bregða fyrir t.d. söl *Palmaria palmata* (sjá mynd \@ref(fig:thari)). Einnig fannst reimaþang (*Himanthalia elongata*) í litlu magni og aðrar brúnþörungategundir sem finnast í fjörum og eru því aðgengilegar á fjöru.
 
 
-```{r thari, fig.cap='Söl og þari (*laminaria* sp.) með ógreindum ásætum', out.width='60%', fig.align='center', echo=FALSE}
+```{r thari, fig.cap='Söl og þari (*laminaria* sp.) með ógreindum ásætum', out.width='100%', fig.align='center', echo=FALSE}
 knitr::include_graphics("myndir/bettina/Laminaria-Palmaria-epiphytes.jpg")
 ```
 
-```{r thari1, fig.cap='Stórþari (*l. hyperborea*) og hrossaþari (*l. digitata)', out.width='60%', fig.align='center', echo=FALSE}
+```{r thari1, fig.cap='Stórþara (*l. hyperborea*) og hrossaþara (*l. digitata) er erfitt að greina í sundur', out.width='100%', fig.align='center', echo=FALSE}
 knitr::include_graphics("myndir/bettina/Laminaria.jpg")
 ```
 
-Rauðir botnþörungar (Corallinaceae) sem minna á kóralla og eru vel þekktir af sjómönnum bæjarins voru algengir í kringum þaraskóginn en nýting á þeim er ekki æskileg þar sem þeir eru svo hægvaxta að vinnsla með sjálfbærum hætti er ekki möguleg \@ref(fig:thari2).
+Kalkþörungar \@ref(fig:thari2), sem eru rauðir botnþörungar (*Corallinaceae*) og minna á kóralla og eru vel þekktir frá sumum svæðum við Skagaströnd af sjómönnum bæjarins voru algengir í kringum þaraskóginn en nýting á þeim er ekki möguleg með sjálfbærum hætti. Hátt í 10 milljónir rúmmetra af kalkþörungaseti eru í Miðfirði og Hrútafirði .
 
-```{r thari2, fig.cap='Maríusvunta og botnþörungar', out.width='60%', fig.align='center', echo=FALSE, fig.show = 'hold'}
+```{r thari2, fig.cap='Maríusvunta og botnþörungar', out.width='100%', fig.align='center', echo=FALSE, fig.show = 'hold'}
 knitr::include_graphics("myndir/bettina/Ulva_Corallinaceae_two_species.jpg")
 ```
 
-```{r thari3, fig.cap='Maríusvunta og botnþörungar', out.width='60%', fig.align='center', echo=FALSE, fig.show = 'hold'}
+```{r thari3, fig.cap='Maríusvunta og botnþörungar', out.width='100%', fig.align='center', echo=FALSE, fig.show = 'hold'}
 knitr::include_graphics("myndir/bettina/fleirikorallarogulva.jpg")
 ```
 

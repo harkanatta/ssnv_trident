@@ -44,24 +44,31 @@ Tilgangur verkefnisins er að gera forkönnun á nýtingu þaraskóga við austa
  Tvær manneskjur vinna samtímis að myndöflun. Myndefni verður tekið með köfun, úr fjöru og mótorbáti. Við myndöflun úr fjöru verða tekin snið 100 m út frá fjöruborði með reglulegu millibili. Kafað verður með myndavélina niður á 20 m dýpi þar sem þess gefst kostur. Úr mótorbáti verða teknar myndir á 40-50 m dýpi eftir fyrirfram ákveðnum sniðum. Myndavélin kafar á um tveggja hnúta hraða (3,7 km/klst) og er með 100 m langa snúru. Rafhlöðuending er 4 klst á sundi en lengri sé hún borin af kafara.
  Seinna verður myndefnið skoðað í landi og verður þari tegundagreindur og þekja þara metin. Mat á þekju er nákvæmara þar sem kafari stýrir myndatökunni. Fiskar verða greindir að næstu flokkunareiningu. Útbúið verður kort af þaraflórunni í forritinu [QGIS](https://www.qgis.org/en/site/) sem verður aðgengilegt á vefsvæði Biopol ehf.“
 
+## Þaranýting
+Þari er nýttur í yfir 30 löndum og er árleg uppskera yfir 800 þúsund tonn á heimsvísu [@Monagail2017]
+
 ## Þari til nýtingar á Íslandi
 Þari er samheiti yfir nokkrar tegundir brúnþörunga sem finnast á grunnsævi (allt að 30 metrum) í klappar, hnullunga og grjótfjörum við landið [@karl1997]. Fjölsykrur sem finna má í brúnþörungum eru mikið notaðar sem bindiefni í matvælum, snyrtivörum, lyfjaiðnaði, textiliðnaði og markskonar öðrum iðnaði. Hrossaþari (*L. digitata*) og beltisþari (*L. saccarina*) henta vel í framleiðslu á fjölsykrum en Þörungaverksmiðjan hf. á Reykhólum hefur þurrkað og malað hrossaþara og selt erlendis til alginatframleiðslu (alginat er fjölsykra). Einnig hefur fyrirtækið Purity Herbs á Akureyri notað hrossaþara frá Þörungaverksmiðjunni í sinni framleiðslu [@Jonsdottir2011].
 
 ## Um þaraskóga
 
-Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægri hita en 20°C. Uppistaða skóganna eru brúnþörungar af ættkvísl (*genus*) *Laminaria* og þá helst hrossaþari (*L. digitata*), stórþari (*L. hyperborea*), beltisþari (*L. saccharina*) og marinkjarni (*Alaria esculenta* (L.)). Þari þarf fast undilag til að festa sig við, grjót eða klappir, og þrífst því ekki á sand- eða leirbotni. Þari þarfnast sólarljóss sem orkugjafa sem takmarkar útbreiðslu þara niður fyrir ákveðið dýpi sem getur verið misjafnlega mikið eftir skyggni sjávarins en þari hefur fundist á 30 metra dýpi hér við land. Flatarmál grunnsævis undir 50 m í Húnaflóa er sýnt á mynd \ref{fig:fig1}.
+Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægri hita en 20°C. Uppistaða skóganna eru brúnþörungar af ættkvísl (*genus*) *Laminaria* og þá helst hrossaþari (*L. digitata*), stórþari (*L. hyperborea*), beltisþari (*L. saccharina*) og marinkjarni (*Alaria esculenta* (L.)). Þari þarf fast undilag til að festa sig við, grjót eða klappir, og þrífst því ekki á sand- eða leirbotni. Þari þarfnast sólarljóss sem orkugjafa sem takmarkar útbreiðslu þara niður fyrir ákveðið dýpi sem getur verið misjafnlega mikið eftir skyggni sjávarins en þari hefur fundist á 30 metra dýpi hér við land. Flatarmál grunnsævis undir 20 m í Húnaflóa er sýnt á mynd \ref{fig:dypi}.
 
-```{r dypi,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Grunnsævi í Húnaflóa undir 50 metrum.'}
+```{r dypi,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='60%',	error=FALSE, fig.cap='Grunnsævi í Húnaflóa undir 20 metra dýpi er um 700 ferkílómetrar að flatarmáli.'}
 
-knitr::include_graphics("myndir/dypi50m.jpg")
+knitr::include_graphics("myndir/feltkort/20mhun.png")
 
 ```
 
+Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þangútbreiðslu [@Gunnarsson2017] en vandasamt er að meta útbreiðslu þara þar sem hann vex undir sjávarborðinu. Loftmyndir í nægjanlegum gæðum eru af skornum skammti og oft er glampi af haffletinum eða skýjahula sem þekur myndirnar.  
 
-Þari á sér náttúrulega óvini eins og ígulker og snigla. Ekki er endilega þari á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. (Heimildir (Tharaskogar_Levington og thari í Vinnumappa/lesefni))
+Þari á sér náttúrulega óvini eins og ígulker og snigla og ekki er endilega þara að finna á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. (Heimildir (Tharaskogar_Levington og thari í Vinnumappa/lesefni))
+
+Í þessu verkefni eru þarabreiður kannaðar með neðansjávardróna. Tegundasamsetning er metin eftir megni. 
 
 
 <!--chapter:end:index.Rmd-->
+
 
 
 # Forkönnun við Finnsstaðanes 2018
@@ -222,7 +229,7 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map %>% leafem::addLogo(img, width = '15%', height = '20%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
+map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
 
@@ -230,7 +237,7 @@ map %>% leafem::addLogo(img, width = '15%', height = '20%',offset.y = 20,offset.
 
 ## Stöð 1
 
-```{r mynd-sk-tvo-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Talsvert af „þangskeggi“ eða sambýli af sepum hveldýra (*Hydrozoa*) en einnig sést í öðuskel (*Modiola modiolus*) '}
+```{r mynd-sk-tvo-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Talsvert af „þangskeggi“ eða sambýli af sepum hveldýra (*Hydrozoa*) en einnig sést í öðuskel (*Modiola modiolus*) ofl. '}
 
 knitr::include_graphics("skjol/skogar/sk2/stodvar/st1/sk2-st1.jpg")
 
@@ -279,29 +286,29 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map %>% leafem::addLogo(img, width = '15%', height = '20%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
+map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 ```
 
+```{r mynd-sk-thrju-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
-```{r mynd-sk-thrju-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 2*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
-
-knitr::include_graphics("skjol/skogar/sk3/stodvar/st2/sk3-st2.jpg")
-
-```
-
-Marinkjarni (Alaria esculenta) 
-```{r mynd-sk-thrju-stod-tvoB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 2*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
-
-knitr::include_graphics("skjol/skogar/sk3/stodvar/st2/sk3-st2B.jpg")
+knitr::include_graphics("skjol/skogar/sk3/stodvar/st1/sk3-st1.jpg")
 
 ```
 
- 
-```{r mynd-sk-thrju-stod-tvoC,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 2*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og marinkjarni (*Alaria esculenta*)'}
-
-knitr::include_graphics("skjol/skogar/sk3/stodvar/st2/sk3-st2C.jpg")
-
+```{r mynd-sk-thrju-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþara- eða stórþarabreiður (*Laminaria digitata* eða *Laminaria hyperborea*) (A, B og C). Einnig sést Marinkjarni (Alaria esculenta) og beltisþari (*Saccharina latissima*) á mynd A.'}
+layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
+knitr::include_graphics("skjol/skogar/sk3/stodvar/st2/samsett.jpeg")
 ```
+
+
+
+
+```{r mynd-sk-thrju-stod-thrju-hydrur,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap= '**Stöð 3**. Mynd A og B: Þarabreiðurnar enda og við taka (líklega) breiður af hveldýrum af ættkvísl (e. genus) *Sertularia*. Mynd C: Hveldýrasambýli af tegundinni *Sertularia cupressina* (mynd: [4028mdk09](https://commons.wikimedia.org/w/index.php?curid=9550879) CC eftir-SA 3.0)).'}
+
+knitr::include_graphics(c("skjol/skogar/sk3/stodvar/st3/samsett.jpeg"))
+```
+
+
 
 # Hofsgrunn 2019
 *Rannsóknarfólk: undirritaður og Arnar Viggósson náttúruunnandi.*
@@ -329,8 +336,25 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map %>% leafem::addLogo(img, width = '15%', height = '20%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
+map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
+```
+
+```{r mynd-sk-fjogur-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþara- eða stórþarabreiður (*Laminaria digitata* eða *Laminaria hyperborea*).'}
+layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
+knitr::include_graphics("skjol/skogar/sk4/stodvar/st1/samsett.jpeg")
+```
+
+
+```{r mynd-sk-fjogur-stodvar-tvo-4,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap='**Stöð 2,3,4**. Hrossaþara- eða stórþarabreiður (*Laminaria digitata* eða *Laminaria hyperborea*).'}
+layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
+knitr::include_graphics("skjol/skogar/sk4/samsett.jpeg")
+```
+
+
+```{r mynd-sk-fjogur-stod-fimm,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE, fig.show='hold',	out.width='100%',	error=FALSE, fig.cap='**Stöð 5**. Á 40 m dýpi er enginn þari.'}
+layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
+knitr::include_graphics("skjol/skogar/sk4/stodvar/st5/sk4-st5.jpeg")
 ```
 
 # Hindisvík 2019
@@ -352,13 +376,13 @@ mapview(leidin)
 
 ```
 
-```{r mynd-sk-fimm-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 1*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og marinkjarni (*Alaria esculenta*)'}
+```{r mynd-sk-fimm-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk5/stodvar/st1/sk5-st1.jpg")
 
 ```
 
-```{r mynd-sk-fimm-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*Stöð 2*. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og marinkjarni (*Alaria esculenta*)'}
+```{r mynd-sk-fimm-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk5/stodvar/st2/sk5-st2.jpg")
 
@@ -374,21 +398,21 @@ knitr::include_graphics("skjol/skogar/sk5/stodvar/st2/sk5-st2.jpg")
 Út frá myndskeiðunum sem tekin voru úti fyrir Finnstaðanesi mátti greina þarategundirnar stórþara (*L. hyperborea*) og hrossaþara (*L. digitata*) en einnig mátti sjá aðrar tegundir nytjaþörunga bregða fyrir t.d. söl *Palmaria palmata* (sjá mynd \@ref(fig:thari)). Einnig fannst reimaþang (*Himanthalia elongata*) í litlu magni og aðrar brúnþörungategundir sem finnast í fjörum og eru því aðgengilegar á fjöru.
 
 
-```{r thari, fig.cap='Söl og þari (*laminaria* sp.) með ógreindum ásætum', out.width='60%', fig.align='center', echo=FALSE}
+```{r thari, fig.cap='Söl og þari (*laminaria* sp.) með ógreindum ásætum', out.width='100%', fig.align='center', echo=FALSE}
 knitr::include_graphics("myndir/bettina/Laminaria-Palmaria-epiphytes.jpg")
 ```
 
-```{r thari1, fig.cap='Stórþari (*l. hyperborea*) og hrossaþari (*l. digitata)', out.width='60%', fig.align='center', echo=FALSE}
+```{r thari1, fig.cap='Stórþara (*l. hyperborea*) og hrossaþara (*l. digitata) er erfitt að greina í sundur', out.width='100%', fig.align='center', echo=FALSE}
 knitr::include_graphics("myndir/bettina/Laminaria.jpg")
 ```
 
-Rauðir botnþörungar (Corallinaceae) sem minna á kóralla og eru vel þekktir af sjómönnum bæjarins voru algengir í kringum þaraskóginn en nýting á þeim er ekki æskileg þar sem þeir eru svo hægvaxta að vinnsla með sjálfbærum hætti er ekki möguleg \@ref(fig:thari2).
+Kalkþörungar \@ref(fig:thari2), sem eru rauðir botnþörungar (*Corallinaceae*) og minna á kóralla og eru vel þekktir frá sumum svæðum við Skagaströnd af sjómönnum bæjarins voru algengir í kringum þaraskóginn en nýting á þeim er ekki möguleg með sjálfbærum hætti. Hátt í 10 milljónir rúmmetra af kalkþörungaseti eru í Miðfirði og Hrútafirði .
 
-```{r thari2, fig.cap='Maríusvunta og botnþörungar', out.width='60%', fig.align='center', echo=FALSE, fig.show = 'hold'}
+```{r thari2, fig.cap='Maríusvunta og botnþörungar', out.width='100%', fig.align='center', echo=FALSE, fig.show = 'hold'}
 knitr::include_graphics("myndir/bettina/Ulva_Corallinaceae_two_species.jpg")
 ```
 
-```{r thari3, fig.cap='Maríusvunta og botnþörungar', out.width='60%', fig.align='center', echo=FALSE, fig.show = 'hold'}
+```{r thari3, fig.cap='Maríusvunta og botnþörungar', out.width='100%', fig.align='center', echo=FALSE, fig.show = 'hold'}
 knitr::include_graphics("myndir/bettina/fleirikorallarogulva.jpg")
 ```
 

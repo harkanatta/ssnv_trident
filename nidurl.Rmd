@@ -1,0 +1,6 @@
+# Niðurlag
+Í þessari könnun voru fýsileg svæði til þarasláttar könnuð, tegundagreiningar, mat á ásætum, en athugun á sjálfbærni svæðanna bíður frekari rannsókna. 
+
+## Framhald
+
+plægja `r anicon::faa("leaf", animate="burst")`
