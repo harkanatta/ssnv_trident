@@ -389,7 +389,21 @@ knitr::include_graphics("skjol/skogar/sk5/stodvar/st2/sk5-st2.jpg")
 ```
 
 
+# Hafnir
 
+```{r mapviewskF,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
+
+
+library(mapview)
+#Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk2/klipp.shp", verbose = FALSE)
+#stodvar<- sf::read_sf(dsn="skjol/skogar/sk2/stodvar")
+leid<- sf::read_sf(dsn="skjol/skogar/sk6/Current.GPX",layer="track_points")
+mapview(leid)
+
+
+
+
+```
 
 <!--chapter:end:01-frmkvmd.Rmd-->
 
