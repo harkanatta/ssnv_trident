@@ -294,13 +294,18 @@ Báturinn var sjósettur í fjöru í Hindisvík á norðanverðu Vatnsnesi. Sn�
 
 
 library(mapview)
-#Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk2/klipp.shp", verbose = FALSE)
-#stodvar<- sf::read_sf(dsn="skjol/skogar/sk2/stodvar")
+
+
+Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk5/klipp.shp", verbose = FALSE)
+stodvar<- sf::read_sf(dsn="skjol/skogar/sk5/stodvar.shp")
 leid<- sf::read_sf(dsn="skjol/skogar/sk5/Current.GPX",layer="track_points")
-leidin <- leid[leid$time<"2019-08-21 15:42:55",]
-mapview(leidin)
-
-
+leid <- leid[leid$time<"2019-08-21 15:42:55",]
+library(RColorBrewer)
+pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
+map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid,type="l") + mapview(stodvar)
+library(magrittr)
+img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
 ```
@@ -324,12 +329,24 @@ knitr::include_graphics("skjol/skogar/sk5/stodvar/st2/sk5-st2.jpg")
 
 
 library(mapview)
-#Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk2/klipp.shp", verbose = FALSE)
-#stodvar<- sf::read_sf(dsn="skjol/skogar/sk2/stodvar")
-leid<- sf::read_sf(dsn="skjol/skogar/sk6/Current.GPX",layer="track_points")
-mapview(leid)
+
+Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk6/klippa.shp", verbose = FALSE)
+stodvar<- sf::read_sf(dsn="skjol/skogar/sk6/punktar.shp")
+leid<- sf::read_sf(dsn="skjol/skogar/sk6/Current.GPX",layer="tracks")
+library(RColorBrewer)
+pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
+map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
+library(magrittr)
+img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
 
+```
+
+
+```{r mynd-sk-sex-stod,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+
+knitr::include_graphics("skjol/skogar/sk6/sk6.jpeg")
 
 ```
