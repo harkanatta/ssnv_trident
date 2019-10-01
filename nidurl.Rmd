@@ -4,3 +4,10 @@
 ## Framhald
 
 plægja `r anicon::faa("leaf", animate="burst")`
+
+Table Header | Second Header
+------------- | -------------
+`r anicon::nia("leaf", animate="burst")` | Cell 2
+Cell 3 | Cell 4 
+
+ `r anicon::cia("skjol/skogar/sk6/stodvar/st3/sk6-st3B.jpeg", animate="pulse", anitype="parent-hover", size=13)`

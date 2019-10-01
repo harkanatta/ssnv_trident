@@ -237,7 +237,7 @@ knitr::include_graphics("skjol/skogar/sk3/stodvar/st2/samsett.jpeg")
 knitr::include_graphics(c("skjol/skogar/sk3/stodvar/st3/samsett.jpeg"))
 ```
 
-
+Landslag er svipað meðfram öllu vestanverðu Vatnsnesinu og má búast við þarabreiðum eftir því öllu. Þarabreiðurnar náðu þó ekki nema 500 metra frá landi sem er í kringum 10 metra dýptarmörkin.
 
 # Hofsgrunn 2019
 *Rannsóknarfólk: undirritaður og Arnar Viggósson náttúruunnandi.*
@@ -285,6 +285,14 @@ knitr::include_graphics("skjol/skogar/sk4/samsett.jpeg")
 layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
 knitr::include_graphics("skjol/skogar/sk4/stodvar/st5/sk4-st5.jpeg")
 ```
+
+Hofsgrunn er 0,74 km² yfir 10 m dýpi og 0,23 km² yfir 20 m dýpi. Þar var nokkuð þéttur þaraskógur með **Laminaria** tegundum á könnunarsvæðunum.
+
+Skógur | Svæði 
+------------- | -------------
+Hofsgrunn | Cell 2
+Cell 3 | Cell 4 
+
 
 # Hindisvík 2019
 *Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.*
@@ -344,9 +352,33 @@ map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.
 
 ```
 
+```{r mynd-sk-sex-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
-```{r mynd-sk-sex-stod,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st2/sk6-st2.jpeg")
 
-knitr::include_graphics("skjol/skogar/sk6/sk6.jpeg")
+```
+
+```{r mynd-sk-sex-stod-thrju,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 3**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st3/sk6-st3.jpeg")
+
+```
+
+```{r mynd-sk-sex-stod-thrjuB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 3**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st3/sk6-st3B.jpeg")
+
+```
+
+
+```{r mynd-sk-sex-stod-fjogur,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 4**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st4/sk6-st4.jpeg")
+
+```
+
+```{r mynd-sk-sex-stod-fimm,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 4**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st4/sk6-st5.jpeg")
 
 ```
