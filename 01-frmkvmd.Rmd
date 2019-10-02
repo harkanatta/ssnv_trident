@@ -140,7 +140,7 @@ Farið var á Zodiac inn að Sölvabakka föstudaginn 21. júní. Báturinn er �
 
 [Stöð 1](https://www.dropbox.com/s/6eh4ntihn256yt7/Trident-Jun-21-115230-HQ.mp4?dl=0),
 [Stöð 2](https://www.dropbox.com/s/y25irxzi70btw6s/Trident-Jun-21-122032-HQ.mp4?dl=0),
-[Stöð](https://www.dropbox.com/s/u30ejcqt9aw63d2/Trident-Jun-21-133207-HQ.mp4?dl=0).
+[Stöð 3](https://www.dropbox.com/s/u30ejcqt9aw63d2/Trident-Jun-21-133207-HQ.mp4?dl=0).
 
 
 ```{r mapviewskB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}

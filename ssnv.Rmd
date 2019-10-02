@@ -48,11 +48,6 @@ Tilgangur verkefnisins er að gera forkönnun á nýtingu þaraskóga við austa
 
 Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægri hita en 20°C. Uppistaða skóganna eru brúnþörungar af ættkvísl (*genus*) *Laminaria* og þá helst hrossaþari (*L. digitata*), stórþari (*L. hyperborea*), beltisþari (*L. saccharina*) og marinkjarni (*Alaria esculenta* (L.)). Þari þarf fast undilag til að festa sig við, grjót eða klappir, og þrífst því ekki á sand- eða leirbotni. Þari þarfnast sólarljóss sem orkugjafa sem takmarkar útbreiðslu þara niður fyrir ákveðið dýpi sem getur verið misjafnlega mikið eftir skyggni sjávarins en þari hefur fundist á 30 metra dýpi hér við land. Flatarmál grunnsævis undir 20 m í Húnaflóa er sýnt á mynd \@ref{fig:dypi}.
 
-```{r dypi,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='60%',	error=FALSE, fig.cap='Grunnsævi í Húnaflóa undir 20 metra dýpi er um 700 ferkílómetrar að flatarmáli.'}
-
-knitr::include_graphics("myndir/feltkort/20mhun.jpeg")
-
-```
 
 Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þangútbreiðslu [@Gunnarsson2017] en vandasamt er að meta útbreiðslu þara þar sem hann vex undir sjávarborðinu. Loftmyndir í nægjanlegum gæðum eru af skornum skammti og oft er glampi af haffletinum eða skýjahula sem þekur myndirnar.  
 
@@ -83,6 +78,27 @@ Sauðá | 11. júlí 2019 | Þétt þarabreiða
 Hofsgrunn | 15. júlí 2019 | Þétt þarabreiða 
 Hindisvík | 21. ágúst 2019 | Þétt þarabreiða
 Hafnir | 25. sept 2019 | Gisin þarabreiða
+
+
+```{r}
+
+stodvar<- sf::read_sf(dsn="skjol/stodvar.shp")
+dypi20<- rgdal::readOGR(dsn="skjol/20mDypi.shp", verbose = FALSE)
+images = c("https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk6/hafnir.jpeg",
+           "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk4/samsett.jpeg",
+           "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/Finnssta%C3%B0anes/hrossa.jpeg",
+           "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk1/stodvar/st1/sk1-st1B.jpg",
+           "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk2/samsett.jpeg",
+           "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk5/stodvar/st1/sk5-st1.jpg",
+           "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk3/samsett.jpeg")
+           
+map <- mapview(dypi20,col.regions="#cb5600",map.types="Esri.WorldImagery",label = "undir 20 m dýpi")+mapview(stodvar, popup = popupImage(images))
+
+library(magrittr)
+img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
+
+```
 
 <!--chapter:end:index.Rmd-->
 
@@ -228,7 +244,7 @@ Farið var á Zodiac inn að Sölvabakka föstudaginn 21. júní. Báturinn er �
 
 [Stöð 1](https://www.dropbox.com/s/6eh4ntihn256yt7/Trident-Jun-21-115230-HQ.mp4?dl=0),
 [Stöð 2](https://www.dropbox.com/s/y25irxzi70btw6s/Trident-Jun-21-122032-HQ.mp4?dl=0),
-[Stöð](https://www.dropbox.com/s/u30ejcqt9aw63d2/Trident-Jun-21-133207-HQ.mp4?dl=0).
+[Stöð 3](https://www.dropbox.com/s/u30ejcqt9aw63d2/Trident-Jun-21-133207-HQ.mp4?dl=0).
 
 
 ```{r mapviewskB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
