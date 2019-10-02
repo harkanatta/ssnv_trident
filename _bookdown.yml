@@ -2,7 +2,7 @@ book_filename: "ssnv"
 repo: https://github.com/harkanatta/ssnv_trident
 delete_merged_file: true
 output_dir: docs
-rmd_files: ["index.Rmd","nidurl.Rmd" ]#"01-frmkvmd.Rmd","02-nidurst.Rmd", "03-Umr.Rmd", "appendix.Rmd", "references.Rmd"]
+rmd_files: ["index.Rmd","01-frmkvmd.Rmd","02-nidurst.Rmd", "03-Umr.Rmd", "appendix.Rmd", "references.Rmd"]
 clean: refs.bib
 newsession: yes
 language:

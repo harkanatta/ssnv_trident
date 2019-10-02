@@ -3,9 +3,6 @@
 # Forkönnun við Finnsstaðanes 2018
 *Rannsóknarfólk: undirritaður Karin Zech, Guðmundur Björnsson fyrrverandi grásleppuveiðimaður og Bjarni Ottósson frá björgunarsveitinni.*
 
-Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Nokkur svæði voru valin til frekari skoðunar með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)). 
-
-Þann 21. Júní 2018 var farið í fyrstu myndatökurnar en það vildi svo óheppilega til að kafbáturinn bilaði í þeirri ferð. Nýtt tæki var fengið rúmum mánuði seinna 8. ágúst ([sjá Viðauka 2](#v2)).
 
 Þann 6. september 2018 var svæðið úti fyrir Finnstaðanesi kannað með kafbátnum. Farið var á báti björgunarsveitarinnar Strandar við fjórða mann. Myndskeið voru tekin upp frá 3 til 21 metra dýpis. Ferðin tók um eina og hálfa klukkustund en þá var undirritaður orðinn sjóveikur af því að stara á skjáinn og einnig var bilun í báðum mótorum bátsins. Myndefnið var greint af rannsóknarfólki BioPol til að bera kennsl á helstu tegundir í þaraskóginum.
 
@@ -199,7 +196,7 @@ knitr::include_graphics("skjol/skogar/sk2/stodvar/st2/sk2-st2B.jpeg")
 [Stöð 2](https://www.dropbox.com/s/ytjy4sl1n0ozmjb/Trident-Jul-11-131216-HQ.mp4?dl=0),
 [Stöð 3](https://www.dropbox.com/s/5qn3lgbcrxlnc7y/Trident-Jul-11-135213-HQ.mp4?dl=0).
 
-Báturinn var sjósettur í fjöru við Hamarsbúð á vestanverðu Vatnsnesi norðan við Hvammstanga. Siglt var í 3-4 kílómetra norður að fyrirætluðum sýnatökustað og virtist vera nokkuð samfelld þarabreiða alla leiðina. 
+Báturinn var sjósettur í fjöru við Hamarsbúð á vestanverðu Vatnsnesi norðan við Hvammstanga þann 11. júlí 2019. Siglt var í 3-4 kílómetra norður að fyrirætluðum sýnatökustað og virtist vera nokkuð samfelld þarabreiða alla leiðina. 
 
 
 
@@ -239,7 +236,7 @@ knitr::include_graphics(c("skjol/skogar/sk3/stodvar/st3/samsett.jpeg"))
 
 Landslag er svipað meðfram öllu vestanverðu Vatnsnesinu og má búast við þarabreiðum eftir því öllu. Þarabreiðurnar náðu þó ekki nema 500 metra frá landi sem er í kringum 10 metra dýptarmörkin.
 
-# Hofsgrunn 2019
+# Hofsgrunn 15. júlí 2019
 *Rannsóknarfólk: undirritaður og Arnar Viggósson náttúruunnandi.*
 [Hlekkur á möppu með myndskeiðum](https://www.dropbox.com/sh/5e86jwymrmedy8i/AAC7B73fHdewmccaKuRMGQEHa?dl=0)
 
@@ -298,6 +295,11 @@ Cell 3 | Cell 4
 *Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.*
 Báturinn var sjósettur í fjöru í Hindisvík á norðanverðu Vatnsnesi. Snögglega bætti í sjóinn og því var siglt í land eftir skamma stund við sýnatökur. Aðeins náðist að mynda tvær stöðvar (eina stöð almennilega og örlítið aðra) en þarabreiða var er eflaust í allri víkinni.
 
+[Hlekkur á möppu með myndskeiðum](https://www.dropbox.com/sh/t3wzev18jphbmjo/AADBKgpTNiw3lhvZZJeEHMNva?dl=0)
+
+[Stöð 1](https://www.dropbox.com/s/ficlrkk5m1c1yf5/Trident-Aug-21-140709-HQ.mp4?dl=0),
+[Stöð 2](https://www.dropbox.com/s/lmrkuw6daol7bco/Trident-Aug-21-134347-HQ.mp4?dl=0)
+
 ```{r mapviewskE,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
 
 
@@ -331,7 +333,17 @@ knitr::include_graphics("skjol/skogar/sk5/stodvar/st2/sk5-st2.jpg")
 ```
 
 
-# Hafnir
+# Hafnir 25. sept 2019
+*Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.*
+Báturinn var settur út í á þar sem Rekavatn rennur út í Kaldranavík í landi Hafna norður á Skaga. Fjörugrjótið er óheppilegra þar sem það er svo vel fægt. Veður var eins og best verður á kosið.
+
+[Hlekkur á möppu með myndskeiðum](https://www.dropbox.com/sh/4nzz6q9ox6jxbez/AADUS3o9DfCDqZ2d34S2_Mxaa?dl=0)
+`anicon::cia("dropbox.png", animate="wrench", anitype="parent-hover", ltext="Hello!", size=3)`
+[Stöð 1](https://www.dropbox.com/s/jrk61lhb4umxqam/Trident-Sep-25-130013-HQ.mp4?dl=0),
+[Stöð 2](https://www.dropbox.com/s/m8ft8ny9v6x1tq4/Trident-Sep-25-132106-HQ.mp4?dl=0)
+[Stöð 3](https://www.dropbox.com/s/fo2b8nwml3gf5a7/Trident-Sep-25-133854-HQ.mp4?dl=0)
+[Stöð 4](https://www.dropbox.com/s/jttuihpf6lfluny/Trident-Sep-25-140023-HQ.mp4?dl=0)
+[Stöð 5](https://www.dropbox.com/s/lxkz7ccg38qg3lp/Trident-Sep-25-141235-HQ.mp4?dl=0)
 
 ```{r mapviewskF,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
 
@@ -351,6 +363,25 @@ map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.
 
 
 ```
+
+```{r mynd-sk-sex-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st2/sk6-st1.jpeg")
+
+```
+
+```{r mynd-sk-sex-stod-eittB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st2/sk6-st1B.jpeg")
+
+```
+
+```{r mynd-sk-sex-stod-eittC,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st2/sk6-st1C.jpeg")
+
+```
+
 
 ```{r mynd-sk-sex-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
@@ -377,7 +408,7 @@ knitr::include_graphics("skjol/skogar/sk6/stodvar/st4/sk6-st4.jpeg")
 
 ```
 
-```{r mynd-sk-sex-stod-fimm,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 4**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-fimm,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 5**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st4/sk6-st5.jpeg")
 
