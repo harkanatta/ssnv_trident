@@ -1,5 +1,4 @@
 
-
 # Forkönnun við Finnsstaðanes 2018
 *Rannsóknarfólk: undirritaður Karin Zech, Guðmundur Björnsson fyrrverandi grásleppuveiðimaður og Bjarni Ottósson frá björgunarsveitinni.*
 
@@ -14,6 +13,31 @@
 
 knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 ```
+
+# Niðurstöður {#results}
+
+Út frá myndskeiðunum sem tekin voru úti fyrir Finnstaðanesi mátti greina þarategundirnar stórþara (*L. hyperborea*) og hrossaþara (*L. digitata*) en einnig mátti sjá aðrar tegundir nytjaþörunga bregða fyrir t.d. söl *Palmaria palmata* (sjá mynd \@ref(fig:thari)). Einnig fannst reimaþang (*Himanthalia elongata*) í litlu magni og aðrar brúnþörungategundir sem finnast í fjörum og eru því aðgengilegar á fjöru.
+
+
+```{r thari, fig.cap='Söl og þari (*laminaria* sp.) með ógreindum ásætum', out.width='100%', fig.align='center', echo=FALSE}
+knitr::include_graphics("myndir/bettina/Laminaria-Palmaria-epiphytes.jpg")
+```
+
+```{r tharieitt, fig.cap='Stórþara (*l. hyperborea*) og hrossaþara (*l. digitata) er erfitt að greina í sundur', out.width='100%', fig.align='center', echo=FALSE}
+knitr::include_graphics("myndir/bettina/Laminaria.jpg")
+```
+
+Kalkþörungar \@ref(fig:tharitveir), sem eru rauðir botnþörungar (*Corallinaceae*) og minna á kóralla og eru vel þekktir frá sumum svæðum við Skagaströnd af sjómönnum bæjarins voru algengir í kringum þaraskóginn en nýting á þeim er ekki möguleg með sjálfbærum hætti. Hátt í 10 milljónir rúmmetra af kalkþörungaseti eru í Miðfirði og Hrútafirði .
+
+```{r tharitveir, fig.cap='Maríusvunta og botnþörungar', out.width='100%', fig.align='center', echo=FALSE, fig.show = 'hold'}
+knitr::include_graphics("myndir/bettina/Ulva_Corallinaceae_two_species.jpg")
+```
+
+```{r tharithrir, fig.cap='Maríusvunta og botnþörungar', out.width='100%', fig.align='center', echo=FALSE, fig.show = 'hold'}
+knitr::include_graphics("myndir/bettina/fleirikorallarogulva.jpg")
+```
+
+
 
 
 # Forkönnun við Eyrina 2019 (kajak)
@@ -366,19 +390,19 @@ map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.
 
 ```{r mynd-sk-sex-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
-knitr::include_graphics("skjol/skogar/sk6/stodvar/st2/sk6-st1.jpeg")
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st1/sk6-st1.jpeg")
 
 ```
 
 ```{r mynd-sk-sex-stod-eittB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
-knitr::include_graphics("skjol/skogar/sk6/stodvar/st2/sk6-st1B.jpeg")
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st1/sk6-st1B.jpeg")
 
 ```
 
 ```{r mynd-sk-sex-stod-eittC,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
-knitr::include_graphics("skjol/skogar/sk6/stodvar/st2/sk6-st1C.jpeg")
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st1/sk6-st1C.jpeg")
 
 ```
 
@@ -410,6 +434,8 @@ knitr::include_graphics("skjol/skogar/sk6/stodvar/st4/sk6-st4.jpeg")
 
 ```{r mynd-sk-sex-stod-fimm,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 5**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
-knitr::include_graphics("skjol/skogar/sk6/stodvar/st4/sk6-st5.jpeg")
+knitr::include_graphics("skjol/skogar/sk6/stodvar/st5/sk6-st5.jpeg")
 
 ```
+
+

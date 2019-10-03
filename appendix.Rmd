@@ -42,7 +42,7 @@ Skipt var um rannsóknarmann við Landsenda. Vindur jókst þegar leið á dagin
 ***15. ágúst 2017. Ólafur Arason og Valtýr Sigurðsson***
 
 ```{r kort1, fig.cap='Könnunarsvæði úr kajakferðum í ágúst 2017', out.width='40%', fig.align='center', echo=FALSE, fig.show = 'hold'}
-knitr::include_graphics(c("myndir/feltkort/kort1.jpg","myndir/feltkort/kort2.jpg","myndir/feltkort/kort3.jpg","myndir/feltkort/kort4.jpg"))
+knitr::include_graphics("myndir/feltkort/konnun.png")
 ```
 
 # Viðauki 2 {#v2}

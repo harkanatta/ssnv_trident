@@ -51,9 +51,7 @@ Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægr
 
 Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þangútbreiðslu [@Gunnarsson2017] en vandasamt er að meta útbreiðslu þara þar sem hann vex undir sjávarborðinu. Loftmyndir í nægjanlegum gæðum eru af skornum skammti og oft er glampi af haffletinum eða skýjahula sem þekur myndirnar.  
 
-Þari á sér náttúrulega óvini eins og ígulker og snigla og ekki er endilega þara að finna á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. (Heimildir (Tharaskogar_Levington og thari í Vinnumappa/lesefni))
-
-Í þessu verkefni eru þarabreiður kannaðar með neðansjávardróna. Tegundasamsetning er metin eftir megni. 
+Þari á sér náttúrulega óvini eins og ígulker og snigla og ekki er endilega þara að finna á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. Þess vegna eru þarabreiður kannaðar með neðansjávardróna í þessu verkefni. Tegundasamsetning og þéttleiki eru gróflega metin sem og nýtanlegt magn. 
 
 ## Úr verkefnislýsingu í styrkumsókn:
 
@@ -61,11 +59,14 @@ Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þa
  Tvær manneskjur vinna samtímis að myndöflun. Myndefni verður tekið með köfun, úr fjöru og mótorbáti. Við myndöflun úr fjöru verða tekin snið 100 m út frá fjöruborði með reglulegu millibili. Kafað verður með myndavélina niður á 20 m dýpi þar sem þess gefst kostur. Úr mótorbáti verða teknar myndir á 40-50 m dýpi eftir fyrirfram ákveðnum sniðum. Myndavélin kafar á um tveggja hnúta hraða (3,7 km/klst) og er með 100 m langa snúru. Rafhlöðuending er 4 klst á sundi en lengri sé hún borin af kafara.
  Seinna verður myndefnið skoðað í landi og verður þari tegundagreindur og þekja þara metin. Mat á þekju er nákvæmara þar sem kafari stýrir myndatökunni. Fiskar verða greindir að næstu flokkunareiningu. Útbúið verður kort af þaraflórunni í forritinu [QGIS](https://www.qgis.org/en/site/) sem verður aðgengilegt á vefsvæði Biopol ehf.“
 
+
+## Framkvæmd
+
 Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Nokkur svæði voru valin til frekari skoðunar með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)). 
 
 Þann 21. Júní 2018 var farið í fyrstu myndatökurnar en það vildi svo óheppilega til að kafbáturinn bilaði í þeirri ferð. Nýtt tæki var fengið rúmum mánuði seinna 8. ágúst ([sjá Viðauka 2](#v2)).
 
-Eftir því sem verkefnið þróaðist var ljóst að búast má við þéttum þarabreiðum frá fjörumörkum niður að 15 m dýpi en sjaldan neðar (þó sást þari á Skallarifi við Hafnir á um 20 m dýpi). Það var því ákveðið að minnka fyrirhuguð sýnatökusvæði. Alls var farið í 11 leiðangra:
+Eftir því sem verkefnið þróaðist var ljóst að búast má við þéttum þarabreiðum frá fjörumörkum niður að 15 m dýpi en sjaldan neðar (þó sást gisin þarabreiða á Skallarifi við Hafnir á um 20 m dýpi). Það var því ákveðið að minnka fyrirhuguð sýnatökusvæði. Alls var farið í 11 leiðangra:
 
 Staður | Dagsetning | `r anicon::nia("Athugasemd", animate="burst", anitype="parent-hover")`
 ------------- | ------------- | -------------
@@ -80,7 +81,7 @@ Hindisvík | 21. ágúst 2019 | Þétt þarabreiða
 Hafnir | 25. sept 2019 | Gisin þarabreiða
 
 
-```{r}
+```{r yfirlitskort,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
 
 stodvar<- sf::read_sf(dsn="skjol/stodvar.shp")
 dypi20<- rgdal::readOGR(dsn="skjol/20mDypi.shp", verbose = FALSE)
@@ -91,11 +92,20 @@ images = c("https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skj
            "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk2/samsett.jpeg",
            "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk5/stodvar/st1/sk5-st1.jpg",
            "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk3/samsett.jpeg")
-           
-map <- mapview(dypi20,col.regions="#cb5600",map.types="Esri.WorldImagery",label = "undir 20 m dýpi")+mapview(stodvar, popup = popupImage(images))
+
+urls=c("https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#1","https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#3","https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#18","https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#21","https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#11","https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#20","https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#7")
+
+litir <- RColorBrewer::brewer.pal(7,"Accent")
+library(mapview)     
+map <- mapview(dypi20,col.regions="#cb5600",map.types="Stamen.TerrainBackground",label = "undir 20 m dýpi", legend = FALSE)+mapview(stodvar, popup = leafpop:::popupIframe(urls), legend=FALSE,col.regions=litir,cex=8)
 
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 ```
+
+```{r}
+knitr::include_app('https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#1')
+```
+
