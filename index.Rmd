@@ -39,8 +39,6 @@ knitr::opts_chunk$set(echo = F, message=F, warning=F, error=F, comment=NA, R.opt
 Tilgangur verkefnisins er að gera forkönnun á nýtingu þaraskóga við austanverðan Húnaflóa, með áherslu á stórþara (*Laminaria hyperborea*), hrossaþara (*Laminaria digitata*) og beltisþara (*Laminaria saccharina*). Verkefninu er skipt upp í sýnatökur annars vegar og hins vegar áætlun um heildarmagn þara á svæðinu sem má vinna með sjálfbærum hætti.
 
 
-
-
 ## Þari til nýtingar á Íslandi
 Þari er samheiti yfir nokkrar tegundir brúnþörunga sem finnast á grunnsævi (allt að 30 metrum) í klappar, hnullunga og grjótfjörum við landið [@karl1997]. Þari er nýttur í yfir 30 löndum og er árleg uppskera yfir 800 þúsund tonn á heimsvísu [@Monagail2017]. Fjölsykrur sem finna má í brúnþörungum eru mikið notaðar sem bindiefni í matvælum, snyrtivörum, lyfjaiðnaði, textiliðnaði og markskonar öðrum iðnaði. Hrossaþari (*L. digitata*) og beltisþari (*L. saccarina*) henta vel í framleiðslu á fjölsykrum en Þörungaverksmiðjan hf. á Reykhólum hefur þurrkað og malað hrossaþara og selt erlendis til alginatframleiðslu (alginat er fjölsykra). Einnig hefur fyrirtækið Purity Herbs á Akureyri notað hrossaþara frá Þörungaverksmiðjunni í sinni framleiðslu [@Jonsdottir2011]. 
 
@@ -51,7 +49,12 @@ Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægr
 
 Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þangútbreiðslu [@Gunnarsson2017] en vandasamt er að meta útbreiðslu þara þar sem hann vex undir sjávarborðinu. Loftmyndir í nægjanlegum gæðum eru af skornum skammti og oft er glampi af haffletinum eða skýjahula sem þekur myndirnar.  
 
-Þari á sér náttúrulega óvini eins og ígulker og snigla og ekki er endilega þara að finna á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. Þess vegna eru þarabreiður kannaðar með neðansjávardróna í þessu verkefni. Tegundasamsetning og þéttleiki eru gróflega metin sem og nýtanlegt magn. 
+Þari á sér náttúrulega óvini eins og ígulker og snigla og ekki er endilega þara að finna á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. Þess vegna var ákveðið að kanna þarabreiður með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)), í þessu verkefni. Tegundasamsetning og þéttleiki eru gróflega metin sem og nýtanlegt magn. 
+
+```{r trident,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='80%',	error=FALSE, fig.cap='Kafbáturinn er tengdur við kefli sem sendir wifi-merki í spjaldtölvu en í henni er forrit sem gerir notandanum kleift að stýra kafbátnum með snertiskjánum og sjá hvað fyrir honum er meðal annars'}
+knitr::include_graphics("myndir/Trident_litil.jpg")
+```
+
 
 ## Úr verkefnislýsingu í styrkumsókn:
 
@@ -61,30 +64,47 @@ Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þa
 
 
 ## Framkvæmd
+### Sýnatökur
+Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Í þessum leiðöngrum fékkst gróf yfirsýn og voru nokkur svæði valin til frekari skoðunar seinna með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)).
 
-Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Nokkur svæði voru valin til frekari skoðunar með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)). 
+Þann 21. Júní 2018 var farið í fyrstu myndatökurnar en það vildi svo óheppilega til að kafbáturinn bilaði í þeirri ferð. Nýtt tæki var fengið rúmum mánuði seinna 8. ágúst ([sjá Viðauka 2](#v2)). Sýnatökum var svo haldið áfram seinna um haustið og sumarið á eftir.
 
-Þann 21. Júní 2018 var farið í fyrstu myndatökurnar en það vildi svo óheppilega til að kafbáturinn bilaði í þeirri ferð. Nýtt tæki var fengið rúmum mánuði seinna 8. ágúst ([sjá Viðauka 2](#v2)).
-
-Eftir því sem verkefnið þróaðist var ljóst að búast má við þéttum þarabreiðum frá fjörumörkum niður að 15 m dýpi en sjaldan neðar (þó sást gisin þarabreiða á Skallarifi við Hafnir á um 20 m dýpi). Það var því ákveðið að minnka fyrirhuguð sýnatökusvæði. Alls var farið í 11 leiðangra:
+Eftir því sem verkefnið þróaðist var ljóst að búast má við þéttum þarabreiðum frá fjörumörkum niður að 15 m dýpi en sjaldan neðar (þó sást gisin þarabreiða á Skallarifi við Hafnir á um 20 m dýpi). Það var því ákveðið að minnka fyrirhuguð sýnatökusvæði og notast við Zodiac gúmmíbát sem fékkst leigður af björgunarsveitinni Strönd á Skagaströnd. Alls var farið í 6 leiðangra á gúmmíbáti:
 
 Staður | Dagsetning | `r anicon::nia("Athugasemd", animate="burst", anitype="parent-hover")`
 ------------- | ------------- | -------------
-Skagstr.-Ytriey  | 2. ágúst 2017 | Forskoðun
-Kálfsh.vík - Skagstr. | 15. ágúst 2017 | Forskoðun 
-Finnstaðanes | 6. september 2018 | Þétt þarabreiða 
-Eyrin | 11. júní 2019 | Þétt þarabreiða 
-Stekkjavík | 21. júní 2019 | Þétt þarabreiða/sandbotn 
-Sauðá | 11. júlí 2019 | Þétt þarabreiða 
-Hofsgrunn | 15. júlí 2019 | Þétt þarabreiða 
-Hindisvík | 21. ágúst 2019 | Þétt þarabreiða
-Hafnir | 25. sept 2019 | Gisin þarabreiða
+Skagstr.-Ytriey  | 2. ágúst 2017 | Forskoðun 
+Kálfsh.vík - Skagstr. | 15. ágúst 2017 | Forskoðun  
+Finnstaðanes | 6. september 2018 | Myndataka
+Eyrin | 11. júní 2019 | Myndataka 
+Stekkjavík | 21. júní 2019 | Myndataka
+Sauðá | 11. júlí 2019 | Myndataka
+Hofsgrunn | 15. júlí 2019 | Myndataka
+Hindisvík | 21. ágúst 2019 | Myndataka 
+Hafnir | 25. sept 2019 | Myndataka 
 
+Við forkönnun á kajak var komið auga á áhugaverða staði sem voru kannaðir með drónanum en að auki nokkra staði sem ekki gafst færi á að kanna með drónanum en höfðu að geyma þarabreiður.
 
 ```{r yfirlitskort,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
 
-stodvar<- sf::read_sf(dsn="skjol/stodvar.shp")
-dypi20<- rgdal::readOGR(dsn="skjol/20mDypi.shp", verbose = FALSE)
+stodvar <- sf::read_sf(dsn="skjol/stodvar.shp")
+#dypi20 <- rgdal::readOGR(dsn="skjol/20mDypi.shp", verbose = FALSE)
+dypi10 <- rgdal::readOGR(dsn="skjol/10mlengjur.shp", verbose = FALSE)
+
+library(raster)
+skogar <- shapefile("skjol/Konnun.shp")
+skogar@data$SV[c(15:16,20,22:24)] <- c("Hamarsbúð",    "Hindisvík",     "Finnsstaðanes",  "Bjargarbjörg",   "Kálfshamarsvík", "Sölvabakki")
+skogar <- skogar[skogar@data$STIG==3,]
+
+#Finna flatarmál flákanna
+a <- list()
+b <- list()
+for (i in 1:length(skogar@data$SV)) {
+ a[i] <- round(area(skogar[i,])/1000000)
+ b[i] <- skogar[i,]$SV
+}
+DF <- data.frame(Stadur=unlist(b),Km2=unlist(a),vefur=rep("https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#1",length(skogar@data$SV)))
+
 images = c("https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk6/hafnir.jpeg",
            "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk4/samsett.jpeg",
            "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/Finnssta%C3%B0anes/hrossa.jpeg",
@@ -97,7 +117,7 @@ urls=c("https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#1","https:
 
 litir <- RColorBrewer::brewer.pal(7,"Accent")
 library(mapview)     
-map <- mapview(dypi20,col.regions="#cb5600",map.types="Stamen.TerrainBackground",label = "undir 20 m dýpi", legend = FALSE)+mapview(stodvar, popup = leafpop:::popupIframe(urls), legend=FALSE,col.regions=litir,cex=8)
+map <- mapview(dypi10,col.regions="#cb5600",map.types="Stamen.TerrainBackground", legend = FALSE)+mapview(stodvar, popup = popupImage(images,width="500"),legend=FALSE,col.regions=litir,cex=10)+mapview(skogar,popup=leafpop::popupTable(DF))
 
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
@@ -107,5 +127,40 @@ map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.
 
 ```{r}
 knitr::include_app('https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#1')
+```
+
+
+### Úrvinnsla
+
+Notast var við kortagrunn frá Landhelgisgæslunni (dýptarlínur) og Landmælingum Íslands ([strandlína](https://atlas.lmi.is/LmiData/index.php?id=8613727663752)) til að meta flatarmál þarabreiða í austanverðum Húnaflóa frá strandlínu að 10 m dýpi. Flákar voru búnir til í kortagerðarforritinu [QGIS](https://www.qgis.org/en/site/) en útreikningar í [R](https://www.r-project.org/). 
+
+
+### Niðurstöður
+
+Svæðið frá strandlínu að 10 m dýpi (sýnt á kortinu hér að neðan) er annars vegar 189 Km² meðfram Vatnsnesi og 122 Km² meðfram Skagaströn. Þéttar þarabreiður eru einnig sýndar á kortinu og flatarmál þeirra er sýnt í töflu hér að neðan.
+
+`knitr::kable(DF[,-3],"markdown")`
+
+
+
+
+```{r}
+a <- list()
+b <- list()
+for (i in 1:length(skogar@data$SV)) {
+ a[i] <- round(area(skogar[i,])/1000000)
+ b[i] <- skogar[i,]$SV
+}
+DF <- data.frame(Stadur=unlist(b),Km2=unlist(a))
+
+library(raster)
+x2 <- shapefile("skjol/10mlengjur.shp")
+crs(x2)
+area(x2) / 1000000
+
+library(raster)
+x <- shapefile("skjol/20mDypi.shp")
+crs(x)
+area(x) / 1000000
 ```
 

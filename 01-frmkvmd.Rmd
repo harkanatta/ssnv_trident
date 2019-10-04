@@ -9,7 +9,7 @@
  knitr::opts_chunk$set(	echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE)
 ```
 
-```{r trident, fig.cap='Tækið sem fékkst fyrir styrkféð frá SSNV kallast [Trident](https://www.openrov.com/) og er framleitt af OpenRov. Hér sést Karin Zech starfsmaður BioPol rýna á skjáinn á fjarstýringunni að tækinu og Guðmundur Björnsson fyrrv. grásleppuveiðimaður var okkur til halds og trausts. ', out.width='35%', fig.show = 'hold'}
+```{r trident2, fig.cap='Tækið sem fékkst fyrir styrkféð frá SSNV kallast [Trident](https://www.openrov.com/) og er framleitt af OpenRov. Hér sést Karin Zech starfsmaður BioPol rýna á skjáinn á fjarstýringunni að tækinu og Guðmundur Björnsson fyrrv. grásleppuveiðimaður var okkur til halds og trausts. ', out.width='35%', fig.show = 'hold'}
 
 knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 ```
@@ -388,13 +388,13 @@ map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.
 
 ```
 
-```{r mynd-sk-sex-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 0**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st1/sk6-st1.jpeg")
 
 ```
 
-```{r mynd-sk-sex-stod-eittB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-eittB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 0**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st1/sk6-st1B.jpeg")
 
