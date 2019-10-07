@@ -11,3 +11,5 @@ sampSurf
 magrittr
 jpeg
 stringi
+plyr
+shiny

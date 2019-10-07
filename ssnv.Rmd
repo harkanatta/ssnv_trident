@@ -40,30 +40,35 @@ Tilgangur verkefnisins er að gera forkönnun á nýtingu þaraskóga við austa
 
 
 ## Þari til nýtingar á Íslandi
-Þari er samheiti yfir nokkrar tegundir brúnþörunga sem finnast á grunnsævi (allt að 30 metrum) í klappar, hnullunga og grjótfjörum við landið [@karl1997]. Þari er nýttur í yfir 30 löndum og er árleg uppskera yfir 800 þúsund tonn á heimsvísu [@Monagail2017]. Fjölsykrur sem finna má í brúnþörungum eru mikið notaðar sem bindiefni í matvælum, snyrtivörum, lyfjaiðnaði, textiliðnaði og markskonar öðrum iðnaði. Hrossaþari (*L. digitata*) og beltisþari (*L. saccarina*) henta vel í framleiðslu á fjölsykrum en Þörungaverksmiðjan hf. á Reykhólum hefur þurrkað og malað hrossaþara og selt erlendis til alginatframleiðslu (alginat er fjölsykra). Einnig hefur fyrirtækið Purity Herbs á Akureyri notað hrossaþara frá Þörungaverksmiðjunni í sinni framleiðslu [@Jonsdottir2011]. 
+Þari er samheiti yfir nokkrar tegundir brúnþörunga sem finnast á grunnsævi (allt að 30 metrum) í klappar, hnullunga og grjótfjörum við landið [@karl1997]. Þari er nýttur í yfir 30 löndum og er árleg uppskera yfir 800 þúsund tonn á heimsvísu [@Monagail2017]. Fjölsykrur sem finna má í brúnþörungum eru mikið notaðar sem bindiefni í matvælum, snyrtivörum, lyfjaiðnaði, textíliðnaði og markskonar öðrum iðnaði. Hrossaþari (*L. digitata*) og beltisþari (*L. saccarina*) henta vel í framleiðslu á fjölsykrum en Þörungaverksmiðjan hf. á Reykhólum hefur þurrkað og malað hrossaþara og selt erlendis til alginatframleiðslu (alginat er fjölsykra). Einnig hefur fyrirtækið Purity Herbs á Akureyri notað hrossaþara frá Þörungaverksmiðjunni í sinni framleiðslu [@Jonsdottir2011]. 
 
 ## Um þaraskóga
 
-Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægri hita en 20°C. Uppistaða skóganna eru brúnþörungar af ættkvísl (*genus*) *Laminaria* og þá helst hrossaþari (*L. digitata*), stórþari (*L. hyperborea*), beltisþari (*L. saccharina*) og marinkjarni (*Alaria esculenta* (L.)). Þari þarf fast undilag til að festa sig við, grjót eða klappir, og þrífst því ekki á sand- eða leirbotni. Þari þarfnast sólarljóss sem orkugjafa sem takmarkar útbreiðslu þara niður fyrir ákveðið dýpi sem getur verið misjafnlega mikið eftir skyggni sjávarins en þari hefur fundist á 30 metra dýpi hér við land. Flatarmál grunnsævis undir 20 m í Húnaflóa er sýnt á mynd \@ref{fig:dypi}.
+Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægri hita en 20°C. Uppistaða skóganna eru brúnþörungar af ættkvísl (*genus*) *Laminaria* og þá helst hrossaþari (*L. digitata*), stórþari (*L. hyperborea*), beltisþari (*L. saccharina*) og marinkjarni (*Alaria esculenta* (L.)). Þari þarf fast undilag til að festa sig við, grjót eða klappir, og þrífst því ekki á sand- eða leirbotni. Þari þarfnast sólarljóss sem orkugjafa sem takmarkar útbreiðslu þara niður fyrir ákveðið dýpi sem getur verið misjafnlega mikið eftir skyggni sjávarins en þari hefur fundist á 30 metra dýpi hér við land [@karl1997]. 
 
+Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þangútbreiðslu [@Gunnarsson2017] en vandasamt er að meta útbreiðslu þara þar sem loftmyndir í nægjanlegum gæðum eru af skornum skammti og oft er glampi af haffletinum eða skýjahula sem þekur myndirnar.
 
-Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þangútbreiðslu [@Gunnarsson2017] en vandasamt er að meta útbreiðslu þara þar sem hann vex undir sjávarborðinu. Loftmyndir í nægjanlegum gæðum eru af skornum skammti og oft er glampi af haffletinum eða skýjahula sem þekur myndirnar.  
+Umfang svæða sem innihalda þarabreiður er ekki gott að meta með mikilli nákvæmni. Svæðið frá strandlínu að 10 m dýpi (sýnt á kortinu hér að neðan) er 189 Km² meðfram Vatnsnesi (frá Vallaá að Hvítserki) og 122 Km² meðfram Skagaströnd. Botngerðir svæðanna eru misjafnar og ólíkar innbyrðis eins og búast má við á svo stóru svæði og því er þaragróður misþéttur. Sumstaðar eru sker eða björg og annarstaðar er botninn sendinn svo þarinn hefur ekki festu.
 
-Þari á sér náttúrulega óvini eins og ígulker og snigla og ekki er endilega þara að finna á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. Þess vegna var ákveðið að kanna þarabreiður með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)), í þessu verkefni. Tegundasamsetning og þéttleiki eru gróflega metin sem og nýtanlegt magn. 
+Þari á sér náttúrulega óvini eins og ígulker og snigla og því er ekki endilega þara að finna á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta líka rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. Þess vegna var ákveðið að kanna þarabreiður með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)), í þessu verkefni.  
 
-```{r trident,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='80%',	error=FALSE, fig.cap='Kafbáturinn er tengdur við kefli sem sendir wifi-merki í spjaldtölvu en í henni er forrit sem gerir notandanum kleift að stýra kafbátnum með snertiskjánum og sjá hvað fyrir honum er meðal annars'}
-knitr::include_graphics("myndir/Trident_litil.jpg")
+```{r trident, fig.cap='Tækið sem fékkst fyrir styrkféð frá SSNV kallast [Trident](https://www.openrov.com/) og er framleitt af OpenRov. Hér sést Karin Zech starfsmaður BioPol rýna á skjáinn á fjarstýringunni að tækinu og Guðmundur Björnsson fyrrv. grásleppuveiðimaður var okkur til halds og trausts. ', out.width='35%', fig.show = 'hold'}
+
+knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 ```
 
 
-## Úr verkefnislýsingu í styrkumsókn:
+
+
+
+## Framkvæmd
+
+Úr verkefnislýsingu í styrkumsókn:
 
 > „Grunnsævi Húnaflóa frá 5-40 metra dýpi verður kannað með köfun og fjarstýrðri neðansjávarmyndavél. Að forathugun lokinni, þar sem rannsóknarsvæði eru ákveðin, verða nokkur snið tekin við austanverðan flóann. Í Húnafirði, við Vatnsnes og í næsta nágrenni norðan við Skagaströnd.  
  Tvær manneskjur vinna samtímis að myndöflun. Myndefni verður tekið með köfun, úr fjöru og mótorbáti. Við myndöflun úr fjöru verða tekin snið 100 m út frá fjöruborði með reglulegu millibili. Kafað verður með myndavélina niður á 20 m dýpi þar sem þess gefst kostur. Úr mótorbáti verða teknar myndir á 40-50 m dýpi eftir fyrirfram ákveðnum sniðum. Myndavélin kafar á um tveggja hnúta hraða (3,7 km/klst) og er með 100 m langa snúru. Rafhlöðuending er 4 klst á sundi en lengri sé hún borin af kafara.
  Seinna verður myndefnið skoðað í landi og verður þari tegundagreindur og þekja þara metin. Mat á þekju er nákvæmara þar sem kafari stýrir myndatökunni. Fiskar verða greindir að næstu flokkunareiningu. Útbúið verður kort af þaraflórunni í forritinu [QGIS](https://www.qgis.org/en/site/) sem verður aðgengilegt á vefsvæði Biopol ehf.“
 
-
-## Framkvæmd
 ### Sýnatökur
 Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Í þessum leiðöngrum fékkst gróf yfirsýn og voru nokkur svæði valin til frekari skoðunar seinna með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)).
 
@@ -71,7 +76,7 @@ knitr::include_graphics("myndir/Trident_litil.jpg")
 
 Eftir því sem verkefnið þróaðist var ljóst að búast má við þéttum þarabreiðum frá fjörumörkum niður að 15 m dýpi en sjaldan neðar (þó sást gisin þarabreiða á Skallarifi við Hafnir á um 20 m dýpi). Það var því ákveðið að minnka fyrirhuguð sýnatökusvæði og notast við Zodiac gúmmíbát sem fékkst leigður af björgunarsveitinni Strönd á Skagaströnd. Alls var farið í 6 leiðangra á gúmmíbáti:
 
-Staður | Dagsetning | `r anicon::nia("Athugasemd", animate="burst", anitype="parent-hover")`
+Staður | Dagsetning | Athugasemd 
 ------------- | ------------- | -------------
 Skagstr.-Ytriey  | 2. ágúst 2017 | Forskoðun 
 Kálfsh.vík - Skagstr. | 15. ágúst 2017 | Forskoðun  
@@ -83,17 +88,30 @@ Hofsgrunn | 15. júlí 2019 | Myndataka
 Hindisvík | 21. ágúst 2019 | Myndataka 
 Hafnir | 25. sept 2019 | Myndataka 
 
-Við forkönnun á kajak var komið auga á áhugaverða staði sem voru kannaðir með drónanum en að auki nokkra staði sem ekki gafst færi á að kanna með drónanum en höfðu að geyma þarabreiður.
+Við forkönnun á kajak var komið auga á áhugaverða staði sem voru kannaðir með drónanum en að auki nokkra staði sem ekki gafst færi á að kanna með drónanum en höfðu að geyma þarabreiður. Flatarmál þarabreiðanna er lauslega metið með eftirfarandi hætti
+* Sjónrænt
+ + Athugun úr báti: mörk þarabreiðanna metin eftir litabreytingum á botni (allt að 10 m sýnileiki)
+ + Athugun með neðansjávardróna
+* Á korti
+ + Áætluð útbreiðsla staðfestra þarabreiða frá strandlínu að 10 m dýptarlínum
 
-```{r yfirlitskort,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
 
-stodvar <- sf::read_sf(dsn="skjol/stodvar.shp")
-#dypi20 <- rgdal::readOGR(dsn="skjol/20mDypi.shp", verbose = FALSE)
-dypi10 <- rgdal::readOGR(dsn="skjol/10mlengjur.shp", verbose = FALSE)
 
+
+### Úrvinnsla
+
+Notast var við kortagrunn frá Landhelgisgæslunni (dýptarlínur) og Landmælingum Íslands ([strandlína](https://atlas.lmi.is/LmiData/index.php?id=8613727663752)) til að meta flatarmál þarabreiða í austanverðum Húnaflóa frá strandlínu að 10 m dýpi. Flákar voru búnir til í kortagerðarforritinu [QGIS](https://www.qgis.org/en/site/) en útreikningar gerðir í reikniforritinu [R](https://www.r-project.org/). 
+
+
+### Niðurstöður
+
+#### Umfang svæða með þaraskógum
+ Svæðin þar sem þéttar þarabreiður voru á (sem kannaðar voru með myndatöku eða komið auga á úr bát) eru sýndar á kortinu hér að neðan. Flatarmál svæðanna er sýnt í töflu \@ref(skogar) en einnig má smella á flákana og punktana á kortinu til að sjá upplýsingar og myndir.
+
+```{r skogar}
 library(raster)
 skogar <- shapefile("skjol/Konnun.shp")
-skogar@data$SV[c(15:16,20,22:24)] <- c("Hamarsbúð",    "Hindisvík",     "Finnsstaðanes",  "Bjargarbjörg",   "Kálfshamarsvík", "Sölvabakki")
+skogar@data$SV[c(15:16,19,21:23)] <- c("Hamarsbúð",    "Hindisvík",     "Finnsstaðanes",  "Bjargarbjörg",   "Kálfshamarsvík", "Sölvabakki")
 skogar <- skogar[skogar@data$STIG==3,]
 
 #Finna flatarmál flákanna
@@ -103,7 +121,30 @@ for (i in 1:length(skogar@data$SV)) {
  a[i] <- round(area(skogar[i,])/1000000)
  b[i] <- skogar[i,]$SV
 }
-DF <- data.frame(Stadur=unlist(b),Km2=unlist(a),vefur=rep("https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#1",length(skogar@data$SV)))
+DF <- data.frame(Stadur=unlist(b),Km2=unlist(a),Dypi=rep("10 m",length(skogar@data$SV)))
+library(plyr)
+DF <- ddply(DF,("Stadur"),summarize,Km2=sum(Km2))
+knitr::kable(DF,booktabs=TRUE,caption = 'Stærð þaraskóga á Skagaströnd og Vatnsnesi')
+```
+
+
+```{r yfirlitskort,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
+
+stodvar <- sf::read_sf(dsn="skjol/stodvar.shp")
+#dypi20 <- rgdal::readOGR(dsn="skjol/20mDypi.shp", verbose = FALSE)
+dypi10 <- rgdal::readOGR(dsn="skjol/10mlengjur.shp", verbose = FALSE)
+dyptarl <- rgdal::readOGR(dsn="skjol/dyptarl.shp", verbose = FALSE)
+
+library(raster)
+#,vefur=rep("https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#1",length(skogar@data$SV)))
+a <- list()
+b <- list()
+for (i in 1:length(dypi10@data[,1])) {
+ a[i] <- round(area(dypi10[i,1])/1000000)
+ b[i] <- as.character(dypi10[i,]$strond)
+}
+DF2 <- data.frame(Stadur=unlist(b),Km2=unlist(a),Dypi=rep("10 m",length(dypi10@data[,1])))
+
 
 images = c("https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk6/hafnir.jpeg",
            "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk4/samsett.jpeg",
@@ -117,7 +158,7 @@ urls=c("https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#1","https:
 
 litir <- RColorBrewer::brewer.pal(7,"Accent")
 library(mapview)     
-map <- mapview(dypi10,col.regions="#cb5600",map.types="Stamen.TerrainBackground", legend = FALSE)+mapview(stodvar, popup = popupImage(images,width="500"),legend=FALSE,col.regions=litir,cex=10)+mapview(skogar,popup=leafpop::popupTable(DF))
+map <- mapview(dypi10,col.regions="#cb5600",map.types="Stamen.TerrainBackground", legend = FALSE,popup=leafpop::popupTable(DF2))+mapview(stodvar, popup = popupImage(images,width="500"),legend=FALSE,col.regions=litir,cex=14)+mapview(skogar,popup=leafpop::popupTable(DF),label=skogar@data$SV,legend=FALSE)+mapview(dyptarl,lwd=0.3,legend=FALSE)
 
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
@@ -125,45 +166,30 @@ map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.
 
 ```
 
-```{r}
-knitr::include_app('https://harkanatta.github.io/orplast2019/slaedur/slaedur.html#1')
+
+#### Mat á hugsanlegri uppskeru
+
+Þarabreiðurnar fylla ekki út í svæðin sem upptalin eru hér að ofan því eins og loftmyndir frá Google og Bing frá árunum 2015-2017 gefa til kynna er vöxtur talsvert gisinn.
+
+```{r svaediogskogar, fig.cap='Svæðin sem metin eru í þessari skýrslu sem þarasvæði eru hér borin saman við þéttustu hluta þarabreiðanna eins og þær koma fram á loftmyndum frá Google og Bing', out.width='35%', fig.show = 'hold'}
+knitr::include_graphics(c("myndir/feltkort/Hamarsbúð.png","myndir/feltkort/Eyrin.png"))
 ```
 
 
-### Úrvinnsla
-
-Notast var við kortagrunn frá Landhelgisgæslunni (dýptarlínur) og Landmælingum Íslands ([strandlína](https://atlas.lmi.is/LmiData/index.php?id=8613727663752)) til að meta flatarmál þarabreiða í austanverðum Húnaflóa frá strandlínu að 10 m dýpi. Flákar voru búnir til í kortagerðarforritinu [QGIS](https://www.qgis.org/en/site/) en útreikningar í [R](https://www.r-project.org/). 
-
-
-### Niðurstöður
-
-Svæðið frá strandlínu að 10 m dýpi (sýnt á kortinu hér að neðan) er annars vegar 189 Km² meðfram Vatnsnesi og 122 Km² meðfram Skagaströn. Þéttar þarabreiður eru einnig sýndar á kortinu og flatarmál þeirra er sýnt í töflu hér að neðan.
-
-`knitr::kable(DF[,-3],"markdown")`
-
-
-
+Könnun á framleiðni þara hefur ekki verið framkvæmd í Húnaflóa en borið saman við rannsóknir sem gerðar voru í Breiðafirði má áætla að vöxtur þara sé á mjög breiðu bili og sé þar dýpi helsti áhrifaþátturinn og staðsetning í firðinum. Þar sem við getum ekki ætlast til að vöxtur þarans í Húnaflóa sé sá sami er heildaruppskera þaraskóganna áðurnefndu á ólíku bili tekinn saman í töflu hér að neðan.
 
 ```{r}
-a <- list()
-b <- list()
-for (i in 1:length(skogar@data$SV)) {
- a[i] <- round(area(skogar[i,])/1000000)
- b[i] <- skogar[i,]$SV
-}
-DF <- data.frame(Stadur=unlist(b),Km2=unlist(a))
-
-library(raster)
-x2 <- shapefile("skjol/10mlengjur.shp")
-crs(x2)
-area(x2) / 1000000
-
-library(raster)
-x <- shapefile("skjol/20mDypi.shp")
-crs(x)
-area(x) / 1000000
+a <- matrix(nrow = 11,ncol = 6)
+for( i in 1:length(skogar)){a[i,] <- round((area(skogar)/2000000)[i]*c(0.5,0.8,1,3,6,9))}
+a[11,] <- unname(colSums(a[1:10,]))
+rownames(a) <- c(skogar@data$SV,"Samtals")
+colnames(a) <- c("0,5 kg/m²","0,8 kg/m²","1 kg/m²","3 kg/m²","6 kg/m²","9 kg/m²")
+knitr::kable(a,booktabs=TRUE,caption = 'Heildaruppskera úr völdum þarabreiðum í Húnaflóa miðað við mismunandi þéttleika á fermetra')
 ```
 
+
+#### Umræður
+Í þessari könnun voru fýsileg svæði til þarasláttar könnuð. Erfitt er að segja hvar bestu þaramiðin eru í Húnaflóa.
 
 <!--chapter:end:index.Rmd-->
 
@@ -178,10 +204,7 @@ area(x) / 1000000
  knitr::opts_chunk$set(	echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE)
 ```
 
-```{r trident2, fig.cap='Tækið sem fékkst fyrir styrkféð frá SSNV kallast [Trident](https://www.openrov.com/) og er framleitt af OpenRov. Hér sést Karin Zech starfsmaður BioPol rýna á skjáinn á fjarstýringunni að tækinu og Guðmundur Björnsson fyrrv. grásleppuveiðimaður var okkur til halds og trausts. ', out.width='35%', fig.show = 'hold'}
 
-knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
-```
 
 # Niðurstöður {#results}
 
