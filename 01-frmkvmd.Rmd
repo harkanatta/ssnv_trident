@@ -1,5 +1,6 @@
+# Myndatökur {#results}
 
-# Forkönnun við Finnsstaðanes 2018
+# Finnsstaðanes 2018
 *Rannsóknarfólk: undirritaður Karin Zech, Guðmundur Björnsson fyrrverandi grásleppuveiðimaður og Bjarni Ottósson frá björgunarsveitinni.*
 
 
@@ -10,8 +11,6 @@
 ```
 
 
-
-# Niðurstöður {#results}
 
 Út frá myndskeiðunum sem tekin voru úti fyrir Finnstaðanesi mátti greina þarategundirnar stórþara (*L. hyperborea*) og hrossaþara (*L. digitata*) en einnig mátti sjá aðrar tegundir nytjaþörunga bregða fyrir t.d. söl *Palmaria palmata* (sjá mynd \@ref(fig:thari)). Einnig fannst reimaþang (*Himanthalia elongata*) í litlu magni og aðrar brúnþörungategundir sem finnast í fjörum og eru því aðgengilegar á fjöru.
 
@@ -182,7 +181,6 @@ map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.
 
 ```
 
-## Stöð 1
 
 ```{r mynd-sk-tvo-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Talsvert af „þangskeggi“ eða sambýli af sepum hveldýra (*Hydrozoa*) en einnig sést í öðuskel (*Modiola modiolus*) ofl. '}
 
