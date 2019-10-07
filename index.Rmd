@@ -106,7 +106,7 @@ Notast var við kortagrunn frá Landhelgisgæslunni (dýptarlínur) og Landmæli
 ### Niðurstöður
 
 #### Umfang svæða með þaraskógum
- Svæðin þar sem þéttar þarabreiður voru á (sem kannaðar voru með myndatöku eða komið auga á úr bát) eru sýndar á kortinu hér að neðan. Flatarmál svæðanna er sýnt í töflu \@ref(skogar) en einnig má smella á flákana og punktana á kortinu til að sjá upplýsingar og myndir.
+ Svæðin þar sem þéttar þarabreiður voru á (sem kannaðar voru með myndatöku eða komið auga á úr bát) eru sýndar á kortinu hér að neðan. Flatarmál svæðanna er sýnt í töflu \@ref(tab:skogar) en einnig má smella á flákana og punktana á kortinu til að sjá upplýsingar og myndir.
 
 ```{r skogar}
 library(raster)
@@ -123,7 +123,7 @@ for (i in 1:length(skogar@data$SV)) {
 }
 DF <- data.frame(Stadur=unlist(b),Km2=unlist(a),Dypi=rep("10 m",length(skogar@data$SV)))
 library(plyr)
-DF <- ddply(DF,("Stadur"),summarize,Km2=sum(Km2))
+DF <- ddply(DF,("Stadur"),summarize,km²=sum(Km2))
 knitr::kable(DF,booktabs=TRUE,caption = 'Stærð þaraskóga á Skagaströnd og Vatnsnesi')
 ```
 
@@ -143,7 +143,7 @@ for (i in 1:length(dypi10@data[,1])) {
  a[i] <- round(area(dypi10[i,1])/1000000)
  b[i] <- as.character(dypi10[i,]$strond)
 }
-DF2 <- data.frame(Stadur=unlist(b),Km2=unlist(a),Dypi=rep("10 m",length(dypi10@data[,1])))
+DF2 <- data.frame(Stadur=unlist(b),Km²=unlist(a),Dypi=rep("10 m",length(dypi10@data[,1])))
 
 
 images = c("https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk6/hafnir.jpeg",
