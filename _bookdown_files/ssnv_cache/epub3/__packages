@@ -1,0 +1,15 @@
+base
+XML
+OpenStreetMap
+lubridate
+sp
+raster
+mapview
+RColorBrewer
+boot
+sampSurf
+magrittr
+jpeg
+stringi
+plyr
+shiny

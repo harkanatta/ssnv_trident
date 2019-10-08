@@ -1,5 +1,5 @@
 ---
-title: <span style="font-size:125%; font-family:Roboto; font-style:normal">Könnun á þaraflóru í Húnaflóa, með tilliti til nýtingar</span>
+title: <span style="font-size:125%; font-family:Roboto; font-style:normal">Þarabreiður í Húnaflóa - Athugun á nýtingu á sjálfbæran hátt</span>
 author:  |
   <span class="noem">Valtýr Sigurðsson</span>
   <a href='https://biopol.is/'>BioPol ehf.</a>
@@ -60,10 +60,10 @@ knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 
 
 
-## Framkvæmd
+# Framkvæmd
 
 
-### Sýnatökur
+# Sýnatökur
 Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Í þessum leiðöngrum fékkst gróf yfirsýn og voru nokkur svæði valin til frekari skoðunar seinna með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)).
 
 Þann 21. Júní 2018 var farið í fyrstu myndatökurnar en það vildi svo óheppilega til að kafbáturinn bilaði í þeirri ferð. Nýtt tæki var fengið rúmum mánuði seinna 8. ágúst ([sjá Viðauka 2](#v2)). Sýnatökum var svo haldið áfram seinna um haustið og sumarið á eftir.
@@ -93,14 +93,14 @@ Við forkönnun á kajak var komið auga á áhugaverða staði sem voru kannað
 
 
 
-### Úrvinnsla
+## Úrvinnsla
 
 Notast var við kortagrunn frá Landhelgisgæslunni (dýptarlínur) og Landmælingum Íslands ([strandlína](https://atlas.lmi.is/LmiData/index.php?id=8613727663752)) til að meta flatarmál þarabreiða í austanverðum Húnaflóa frá strandlínu að 10 m dýpi. Flákar voru búnir til í kortagerðarforritinu [QGIS](https://www.qgis.org/en/site/) en útreikningar gerðir í reikniforritinu [R](https://www.r-project.org/). 
 
 
-### Niðurstöður
+# Niðurstöður
 
-#### Umfang svæða með þaraskógum
+## Umfang svæða með þaraskógum
 
 Umfang svæða sem innihalda þarabreiður er ekki gott að meta með mikilli nákvæmni. Svæðið frá strandlínu að 10 m dýpi (sýnt á kortinu hér að neðan) er 189 Km² meðfram Vatnsnesi (frá Vallaá að Hvítserki) og 122 Km² meðfram Skagaströnd. Botngerðir svæðanna eru misjafnar og ólíkar innbyrðis eins og búast má við á svo stóru svæði og því er þaragróður misþéttur. Sumstaðar eru sker eða björg og annarstaðar er botninn sendinn svo þarinn hefur ekki festu.
 
@@ -165,7 +165,7 @@ map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.
 ```
 
 
-#### Mat á hugsanlegri uppskeru
+## Mat á hugsanlegri uppskeru
 
 
 Könnun á uppskeru og framleiðni þara hefur ekki verið framkvæmd í Húnaflóa en borið saman við rannsóknir sem gerðar voru í Breiðafirði má áætla að vöxtur þara sé á mjög breiðu bili þar sem dýpi og staðsetning í firðinum eru stærstu áhrifaþættirnir. Möguleg heildarframleiðni þaraskóganna áðurnefndu er tekin saman í töflu \@ref(tab:frml) hér að neðan. Athuga skal að hér eru mjög breið vikmörk.
@@ -191,13 +191,14 @@ colnames(a) <- tolur
 knitr::kable(a,booktabs=TRUE,caption = 'Framleiðni valdra þarabreiða í Húnaflóa miðað við mismunandi vaxtarhraða kg/m²/ári')
 ```
 
-#### Umræður
-Í þessari könnun voru fýsileg svæði til þarasláttar könnuð. 
+# Umræður
 
-Þarabreiðurnar fylla ekki alls staðar út í svæðin sem upptalin eru hér að ofan en loftmyndir frá Google og Bing frá árunum 2015-2017 gefa til kynna er vöxtur talsvert gisinn. Það er þó ekki hægt að treysta á slíkar loftmyndir enda ekki hlutverk þeirra að skyggnast undir yfirborð sjávar. Þarasvæðin geta teygt sig niður á meira dýpi en notast var við við þetta mat. Á mynd \@ref(fig:svaediogskogar) sjást til dæmis dökkir flekkir sem ríma ágætlega við staðsetningu þara en svo eru  
+Þarabreiðurnar fylla ekki alls staðar út í svæðin sem upptalin eru hér að ofan en loftmyndir frá Google og Bing frá árunum 2015-2017 gefa til kynna er vöxtur talsvert gisinn. Það er þó ekki hægt að treysta á slíkar loftmyndir enda ekki hlutverk þeirra að skyggnast undir yfirborð sjávar. Þarasvæðin geta teygt sig niður á meira dýpi en notast var við við þetta mat. Á mynd \@ref(fig:svaediogskogar) sjást til dæmis dökkir flekkir sem ríma ágætlega við staðsetningu þara en svo eru svæði, til að mynda í Hindisvík, þar sem talsverðar þarabreiður sjást ekki með loftmyndum.
+
 ```{r svaediogskogar, fig.cap='Svæðin sem metin eru í þessari skýrslu sem þarasvæði eru hér borin saman við þéttustu hluta þarabreiðanna eins og þær koma fram á loftmyndum frá Google og Bing', out.width='50%', fig.show = 'hold'}
 knitr::include_graphics(c("myndir/feltkort/hamarsb.png","myndir/feltkort/eyri.png"))
 ```
 
 
 
+Í þessari athugun voru fýsileg svæði til þarasláttar könnuð með það að markmiði að skrásetja umfang þeirra. Það markmið náðist ekki þar sem þessi svæði eru umfangsmeiri en rannsakanda sást fyrir. Nú hafa þarabreiðurnar verið myndaðar svo að áhugasamir geti séð að hverju er gengið á hverju svæði fyrir sig einnig verður hægt að nota þessar upplýsingar í áframhaldandi rannsóknir; til dæmis á magni uppskeru og framleiðni.

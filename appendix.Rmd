@@ -47,5 +47,5 @@ knitr::include_graphics("myndir/feltkort/konnun.png")
 
 # Viðauki 2 {#v2}
 ## Bilanir á kafbáti
-Trident kafbáturinn barst okkur 20. júní 2018 og bilaði eftir tvær kafanir. Framleiðandinn sendi okkur nýjan eftir að hafa kannað orsök bilunarinnar sem virtist vera galli sem hann tók ábyrgð á. Nýja eintakið kom til okkar þann 8. ágúst. Tölvupóstsamskiptin við OpenRov sem framleiddi tækið eru látin fylgja á pdf-formi skýrslunnar ([hér er hlekkur á skjalið](https://github.com/harkanatta/ssnv_trident/blob/master/skjol/bilanir.pdf)). Athugið að tölvupóstsamskiptin eru í öfugri tímaröð.
-\includepdf[pages={1-11}, scale=0.8]{skjol/bilanir.pdf}
+Trident kafbáturinn barst okkur 20. júní 2018 og bilaði eftir tvær kafanir. Framleiðandinn sendi okkur nýjan eftir að hafa kannað orsök bilunarinnar sem virtist vera galli sem hann tók ábyrgð á. Nýja eintakið kom til okkar þann 8. ágúst. Tölvupóstsamskiptin við OpenRov sem framleiddi tækið er hér ([hlekkur á skjalið](https://github.com/harkanatta/ssnv_trident/blob/master/skjol/bilanir.pdf)). Athugið að tölvupóstsamskiptin eru í öfugri tímaröð.
+
