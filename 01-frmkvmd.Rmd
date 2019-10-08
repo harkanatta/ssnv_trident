@@ -22,9 +22,11 @@ stodvar<- sf::read_sf(dsn="skjol/skogar/sk2/stodvar")
 leid<- sf::read_sf(dsn="skjol/skogar/sk2/Current.GPX",layer="tracks")
 library(RColorBrewer)
 pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
-map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
+map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l",cex=14)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+myndir=c("skjol/skogar/sk2/stodvar/st1/sk2-st1B.jpg","skjol/skogar/sk2/stodvar/st2/sk2-st2.jpeg","skjol/skogar/sk2/stodvar/st3/ekkert.png")
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14, popup = popupImage(myndir))
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
@@ -81,6 +83,7 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 ```
 
@@ -131,6 +134,7 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 ```
@@ -152,12 +156,7 @@ layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
 knitr::include_graphics("skjol/skogar/sk4/stodvar/st5/sk4-st5.jpeg")
 ```
 
-Hofsgrunn er 0,74 km² yfir 10 m dýpi og 0,23 km² yfir 20 m dýpi. Þar var nokkuð þéttur þaraskógur með **Laminaria** tegundum á könnunarsvæðunum.
 
-Skógur | Svæði 
-------------- | -------------
-Hofsgrunn | Cell 2
-Cell 3 | Cell 4 
 
 
 # Hindisvík 2019
@@ -175,15 +174,16 @@ Báturinn var sjósettur í fjöru í Hindisvík á norðanverðu Vatnsnesi. Sn�
 library(mapview)
 
 
-Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk5/klipp.shp", verbose = FALSE)
+#Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk5/klipp.shp", verbose = FALSE)
 stodvar<- sf::read_sf(dsn="skjol/skogar/sk5/stodvar.shp")
-leid<- sf::read_sf(dsn="skjol/skogar/sk5/Current.GPX",layer="track_points")
-leid <- leid[leid$time<"2019-08-21 15:42:55",]
+#leid<- sf::read_sf(dsn="skjol/skogar/sk5/Current.GPX",layer="track_points")
+#leid <- leid[leid$time<"2019-08-21 15:42:55",]
 library(RColorBrewer)
 pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
-map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid,type="l") + mapview(stodvar)
+#map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid,type="l") + mapview(stodvar)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
@@ -219,14 +219,15 @@ Báturinn var settur út í á þar sem Rekavatn rennur út í Kaldranavík í l
 
 library(mapview)
 
-Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk6/klippa.shp", verbose = FALSE)
+#Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk6/klippa.shp", verbose = FALSE)
 stodvar<- sf::read_sf(dsn="skjol/skogar/sk6/punktar.shp")
-leid<- sf::read_sf(dsn="skjol/skogar/sk6/Current.GPX",layer="tracks")
+#leid<- sf::read_sf(dsn="skjol/skogar/sk6/Current.GPX",layer="tracks")
 library(RColorBrewer)
 pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
-map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
+#map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
@@ -307,7 +308,7 @@ knitr::include_graphics("myndir/bettina/Laminaria-Palmaria-epiphytes.jpg")
 knitr::include_graphics("myndir/bettina/Laminaria.jpg")
 ```
 
-Kalkþörungar \@ref(fig:tharitveir), sem eru rauðir botnþörungar (*Corallinaceae*) og minna á kóralla og eru vel þekktir frá sumum svæðum við Skagaströnd af sjómönnum bæjarins voru algengir í kringum þaraskóginn en nýting á þeim er ekki möguleg með sjálfbærum hætti. Hátt í 10 milljónir rúmmetra af kalkþörungaseti eru í Miðfirði og Hrútafirði .
+Kalkþörungar \@ref(fig:tharitveir), sem eru rauðir botnþörungar (*Corallinaceae*) og minna á kóralla og eru vel þekktir frá sumum svæðum við Skagaströnd af sjómönnum bæjarins voru sjáanlegir á öllum stöðvum (nema þar sem ekki var kafað niður á botn (Hindisvík)) í þessari rannsókn. Hátt í 10 milljónir rúmmetra af kalkþörungaseti eru í Miðfirði og Hrútafirði [@thors].
 
 ```{r tharitveir, fig.cap='Maríusvunta og botnþörungar', out.width='100%', fig.align='center', echo=FALSE, fig.show = 'hold'}
 knitr::include_graphics("myndir/bettina/Ulva_Corallinaceae_two_species.jpg")
@@ -415,8 +416,8 @@ kajak <- geodf
 coordinates(kajak) <- ~ lon + lat
 proj4string(kajak) <- "+init=epsg:4326"
 #class(spdf_geo)
-sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp",verbose = FALSE)
-mapview(kajak,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(sk1,color="red",col.regions="grey")
+#sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp",verbose = FALSE)
+mapview(kajak,color="red",col.regions="grey",map.types="Esri.WorldImagery")
 
 #mapview(spdf_geo,map.types="Esri.WorldImagery")
 

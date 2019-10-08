@@ -48,7 +48,6 @@ Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægr
 
 Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þangútbreiðslu [@Gunnarsson2017] en vandasamt er að meta útbreiðslu þara þar sem loftmyndir í nægjanlegum gæðum eru af skornum skammti og oft er glampi af haffletinum eða skýjahula sem þekur myndirnar.
 
-Umfang svæða sem innihalda þarabreiður er ekki gott að meta með mikilli nákvæmni. Svæðið frá strandlínu að 10 m dýpi (sýnt á kortinu hér að neðan) er 189 Km² meðfram Vatnsnesi (frá Vallaá að Hvítserki) og 122 Km² meðfram Skagaströnd. Botngerðir svæðanna eru misjafnar og ólíkar innbyrðis eins og búast má við á svo stóru svæði og því er þaragróður misþéttur. Sumstaðar eru sker eða björg og annarstaðar er botninn sendinn svo þarinn hefur ekki festu.
 
 Þari á sér náttúrulega óvini eins og ígulker og snigla og því er ekki endilega þara að finna á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta líka rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. Þess vegna var ákveðið að kanna þarabreiður með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)), í þessu verkefni.  
 
@@ -106,7 +105,10 @@ Notast var við kortagrunn frá Landhelgisgæslunni (dýptarlínur) og Landmæli
 ### Niðurstöður
 
 #### Umfang svæða með þaraskógum
- Svæðin þar sem þéttar þarabreiður voru á (sem kannaðar voru með myndatöku eða komið auga á úr bát) eru sýndar á kortinu hér að neðan. Flatarmál svæðanna er sýnt í töflu \@ref(tab:skogar) en einnig má smella á flákana og punktana á kortinu til að sjá upplýsingar og myndir.
+
+Umfang svæða sem innihalda þarabreiður er ekki gott að meta með mikilli nákvæmni. Svæðið frá strandlínu að 10 m dýpi (sýnt á kortinu hér að neðan) er 189 Km² meðfram Vatnsnesi (frá Vallaá að Hvítserki) og 122 Km² meðfram Skagaströnd. Botngerðir svæðanna eru misjafnar og ólíkar innbyrðis eins og búast má við á svo stóru svæði og því er þaragróður misþéttur. Sumstaðar eru sker eða björg og annarstaðar er botninn sendinn svo þarinn hefur ekki festu.
+
+Svæðin þar sem þéttar þarabreiður voru á (sem kannaðar voru með myndatöku eða komið auga á úr bát) eru sýndar á kortinu hér að neðan. Flatarmál svæðanna er sýnt í töflu \@ref(tab:skogar) en einnig má smella á flákana og punktana á kortinu til að sjá upplýsingar og myndir.
 
 ```{r skogar}
 library(raster)
@@ -170,9 +172,9 @@ map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.
 #### Mat á hugsanlegri uppskeru
 
 
-Könnun á uppskeru og framleiðni þara hefur ekki verið framkvæmd í Húnaflóa en borið saman við rannsóknir sem gerðar voru í Breiðafirði má áætla að vöxtur þara sé á mjög breiðu bili þar sem dýpi og staðsetning í firðinum eru stærstu áhrifaþættirnir. Möguleg heildaruppskera þaraskóganna áðurnefndu er tekin saman í töflu \@ref(tab:uppsk) hér að neðan. Athuga skal að hér eru mjög breið vikmörk
+Könnun á uppskeru og framleiðni þara hefur ekki verið framkvæmd í Húnaflóa en borið saman við rannsóknir sem gerðar voru í Breiðafirði má áætla að vöxtur þara sé á mjög breiðu bili þar sem dýpi og staðsetning í firðinum eru stærstu áhrifaþættirnir. Möguleg heildarframleiðni þaraskóganna áðurnefndu er tekin saman í töflu \@ref(tab:frml) hér að neðan. Athuga skal að hér eru mjög breið vikmörk.
 
-```{r uppsk}
+```{r uppsk, eval=FALSE, include=FALSE}
 tolur=c(0.2,0.5,0.8,1,3,6,9)
 a <- matrix(nrow = length(skogar)+1,ncol = length(tolur))
 for( i in 1:length(skogar)){a[i,] <- round((area(skogar)/1000000)[i]*tolur)}
@@ -194,8 +196,9 @@ knitr::kable(a,booktabs=TRUE,caption = 'Framleiðni valdra þarabreiða í Húna
 ```
 
 #### Umræður
-Í þessari könnun voru fýsileg svæði til þarasláttar könnuð. Þarabreiðurnar fylla ekki alls staðar út í svæðin sem upptalin eru hér að ofan en loftmyndir frá Google og Bing frá árunum 2015-2017 gefa til kynna er vöxtur talsvert gisinn. Það er þó alls ekki hægt að treysta á slíkar loftmyndir enda ekki hlutverk þeirra að skyggnast undir yfirborð sjávar. Þarasvæðin geta teygt sig niður á meira dýpi en notast var við við þetta mat.
+Í þessari könnun voru fýsileg svæði til þarasláttar könnuð. 
 
+Þarabreiðurnar fylla ekki alls staðar út í svæðin sem upptalin eru hér að ofan en loftmyndir frá Google og Bing frá árunum 2015-2017 gefa til kynna er vöxtur talsvert gisinn. Það er þó ekki hægt að treysta á slíkar loftmyndir enda ekki hlutverk þeirra að skyggnast undir yfirborð sjávar. Þarasvæðin geta teygt sig niður á meira dýpi en notast var við við þetta mat. Á mynd \@ref(fig:svaediogskogar) sjást til dæmis dökkir flekkir sem ríma ágætlega við staðsetningu þara en svo eru  
 ```{r svaediogskogar, fig.cap='Svæðin sem metin eru í þessari skýrslu sem þarasvæði eru hér borin saman við þéttustu hluta þarabreiðanna eins og þær koma fram á loftmyndum frá Google og Bing', out.width='50%', fig.show = 'hold'}
 knitr::include_graphics(c("myndir/feltkort/hamarsb.png","myndir/feltkort/eyri.png"))
 ```
@@ -229,9 +232,11 @@ stodvar<- sf::read_sf(dsn="skjol/skogar/sk2/stodvar")
 leid<- sf::read_sf(dsn="skjol/skogar/sk2/Current.GPX",layer="tracks")
 library(RColorBrewer)
 pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
-map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
+map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l",cex=14)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+myndir=c("skjol/skogar/sk2/stodvar/st1/sk2-st1B.jpg","skjol/skogar/sk2/stodvar/st2/sk2-st2.jpeg","skjol/skogar/sk2/stodvar/st3/ekkert.png")
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14, popup = popupImage(myndir))
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
@@ -288,6 +293,7 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 ```
 
@@ -338,6 +344,7 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 ```
@@ -359,12 +366,7 @@ layout(matrix(c(1,1,1,2,3,4), 2,3, byrow = TRUE))
 knitr::include_graphics("skjol/skogar/sk4/stodvar/st5/sk4-st5.jpeg")
 ```
 
-Hofsgrunn er 0,74 km² yfir 10 m dýpi og 0,23 km² yfir 20 m dýpi. Þar var nokkuð þéttur þaraskógur með **Laminaria** tegundum á könnunarsvæðunum.
 
-Skógur | Svæði 
-------------- | -------------
-Hofsgrunn | Cell 2
-Cell 3 | Cell 4 
 
 
 # Hindisvík 2019
@@ -382,15 +384,16 @@ Báturinn var sjósettur í fjöru í Hindisvík á norðanverðu Vatnsnesi. Sn�
 library(mapview)
 
 
-Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk5/klipp.shp", verbose = FALSE)
+#Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk5/klipp.shp", verbose = FALSE)
 stodvar<- sf::read_sf(dsn="skjol/skogar/sk5/stodvar.shp")
-leid<- sf::read_sf(dsn="skjol/skogar/sk5/Current.GPX",layer="track_points")
-leid <- leid[leid$time<"2019-08-21 15:42:55",]
+#leid<- sf::read_sf(dsn="skjol/skogar/sk5/Current.GPX",layer="track_points")
+#leid <- leid[leid$time<"2019-08-21 15:42:55",]
 library(RColorBrewer)
 pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
-map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid,type="l") + mapview(stodvar)
+#map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid,type="l") + mapview(stodvar)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
@@ -426,14 +429,15 @@ Báturinn var settur út í á þar sem Rekavatn rennur út í Kaldranavík í l
 
 library(mapview)
 
-Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk6/klippa.shp", verbose = FALSE)
+#Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk6/klippa.shp", verbose = FALSE)
 stodvar<- sf::read_sf(dsn="skjol/skogar/sk6/punktar.shp")
-leid<- sf::read_sf(dsn="skjol/skogar/sk6/Current.GPX",layer="tracks")
+#leid<- sf::read_sf(dsn="skjol/skogar/sk6/Current.GPX",layer="tracks")
 library(RColorBrewer)
 pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
-map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
+#map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
@@ -514,7 +518,7 @@ knitr::include_graphics("myndir/bettina/Laminaria-Palmaria-epiphytes.jpg")
 knitr::include_graphics("myndir/bettina/Laminaria.jpg")
 ```
 
-Kalkþörungar \@ref(fig:tharitveir), sem eru rauðir botnþörungar (*Corallinaceae*) og minna á kóralla og eru vel þekktir frá sumum svæðum við Skagaströnd af sjómönnum bæjarins voru algengir í kringum þaraskóginn en nýting á þeim er ekki möguleg með sjálfbærum hætti. Hátt í 10 milljónir rúmmetra af kalkþörungaseti eru í Miðfirði og Hrútafirði .
+Kalkþörungar \@ref(fig:tharitveir), sem eru rauðir botnþörungar (*Corallinaceae*) og minna á kóralla og eru vel þekktir frá sumum svæðum við Skagaströnd af sjómönnum bæjarins voru sjáanlegir á öllum stöðvum (nema þar sem ekki var kafað niður á botn (Hindisvík)) í þessari rannsókn. Hátt í 10 milljónir rúmmetra af kalkþörungaseti eru í Miðfirði og Hrútafirði [@thors].
 
 ```{r tharitveir, fig.cap='Maríusvunta og botnþörungar', out.width='100%', fig.align='center', echo=FALSE, fig.show = 'hold'}
 knitr::include_graphics("myndir/bettina/Ulva_Corallinaceae_two_species.jpg")
@@ -622,8 +626,8 @@ kajak <- geodf
 coordinates(kajak) <- ~ lon + lat
 proj4string(kajak) <- "+init=epsg:4326"
 #class(spdf_geo)
-sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp",verbose = FALSE)
-mapview(kajak,color="red",col.regions="grey",map.types="Esri.WorldImagery")+mapview(sk1,color="red",col.regions="grey")
+#sk1 <- rgdal::readOGR(dsn="skjol/skogar/sk1/sk1.shp",verbose = FALSE)
+mapview(kajak,color="red",col.regions="grey",map.types="Esri.WorldImagery")
 
 #mapview(spdf_geo,map.types="Esri.WorldImagery")
 
