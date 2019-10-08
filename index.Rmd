@@ -62,11 +62,6 @@ knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 
 ## Framkvæmd
 
-Úr verkefnislýsingu í styrkumsókn:
-
-> „Grunnsævi Húnaflóa frá 5-40 metra dýpi verður kannað með köfun og fjarstýrðri neðansjávarmyndavél. Að forathugun lokinni, þar sem rannsóknarsvæði eru ákveðin, verða nokkur snið tekin við austanverðan flóann. Í Húnafirði, við Vatnsnes og í næsta nágrenni norðan við Skagaströnd.  
- Tvær manneskjur vinna samtímis að myndöflun. Myndefni verður tekið með köfun, úr fjöru og mótorbáti. Við myndöflun úr fjöru verða tekin snið 100 m út frá fjöruborði með reglulegu millibili. Kafað verður með myndavélina niður á 20 m dýpi þar sem þess gefst kostur. Úr mótorbáti verða teknar myndir á 40-50 m dýpi eftir fyrirfram ákveðnum sniðum. Myndavélin kafar á um tveggja hnúta hraða (3,7 km/klst) og er með 100 m langa snúru. Rafhlöðuending er 4 klst á sundi en lengri sé hún borin af kafara.
- Seinna verður myndefnið skoðað í landi og verður þari tegundagreindur og þekja þara metin. Mat á þekju er nákvæmara þar sem kafari stýrir myndatökunni. Fiskar verða greindir að næstu flokkunareiningu. Útbúið verður kort af þaraflórunni í forritinu [QGIS](https://www.qgis.org/en/site/) sem verður aðgengilegt á vefsvæði Biopol ehf.“
 
 ### Sýnatökur
 Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Í þessum leiðöngrum fékkst gróf yfirsýn og voru nokkur svæði valin til frekari skoðunar seinna með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)).
@@ -88,11 +83,12 @@ Hindisvík | 21. ágúst 2019 | Myndataka
 Hafnir | 25. sept 2019 | Myndataka 
 
 Við forkönnun á kajak var komið auga á áhugaverða staði sem voru kannaðir með drónanum en að auki nokkra staði sem ekki gafst færi á að kanna með drónanum en höfðu að geyma þarabreiður. Flatarmál þarabreiðanna er lauslega metið með eftirfarandi hætti
-* Sjónrænt
- + Athugun úr báti: mörk þarabreiðanna metin eftir litabreytingum á botni (allt að 10 m sýnileiki)
- + Athugun með neðansjávardróna
-* Á korti
- + Áætluð útbreiðsla staðfestra þarabreiða frá strandlínu að 10 m dýptarlínum
+
+  * Sjónrænt
+    + Athugun úr báti: mörk þarabreiðanna metin eftir litabreytingum á botni (undir 10 m sýnileiki)
+    + Athugun með neðansjávardróna
+  * Á korti
+    + Áætluð útbreiðsla staðfestra þarabreiða frá strandlínu að 10 m dýptarlínum
 
 
 

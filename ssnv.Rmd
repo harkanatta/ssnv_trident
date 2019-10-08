@@ -62,11 +62,6 @@ knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 
 ## Framkvæmd
 
-Úr verkefnislýsingu í styrkumsókn:
-
-> „Grunnsævi Húnaflóa frá 5-40 metra dýpi verður kannað með köfun og fjarstýrðri neðansjávarmyndavél. Að forathugun lokinni, þar sem rannsóknarsvæði eru ákveðin, verða nokkur snið tekin við austanverðan flóann. Í Húnafirði, við Vatnsnes og í næsta nágrenni norðan við Skagaströnd.  
- Tvær manneskjur vinna samtímis að myndöflun. Myndefni verður tekið með köfun, úr fjöru og mótorbáti. Við myndöflun úr fjöru verða tekin snið 100 m út frá fjöruborði með reglulegu millibili. Kafað verður með myndavélina niður á 20 m dýpi þar sem þess gefst kostur. Úr mótorbáti verða teknar myndir á 40-50 m dýpi eftir fyrirfram ákveðnum sniðum. Myndavélin kafar á um tveggja hnúta hraða (3,7 km/klst) og er með 100 m langa snúru. Rafhlöðuending er 4 klst á sundi en lengri sé hún borin af kafara.
- Seinna verður myndefnið skoðað í landi og verður þari tegundagreindur og þekja þara metin. Mat á þekju er nákvæmara þar sem kafari stýrir myndatökunni. Fiskar verða greindir að næstu flokkunareiningu. Útbúið verður kort af þaraflórunni í forritinu [QGIS](https://www.qgis.org/en/site/) sem verður aðgengilegt á vefsvæði Biopol ehf.“
 
 ### Sýnatökur
 Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Í þessum leiðöngrum fékkst gróf yfirsýn og voru nokkur svæði valin til frekari skoðunar seinna með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)).
@@ -88,11 +83,12 @@ Hindisvík | 21. ágúst 2019 | Myndataka
 Hafnir | 25. sept 2019 | Myndataka 
 
 Við forkönnun á kajak var komið auga á áhugaverða staði sem voru kannaðir með drónanum en að auki nokkra staði sem ekki gafst færi á að kanna með drónanum en höfðu að geyma þarabreiður. Flatarmál þarabreiðanna er lauslega metið með eftirfarandi hætti
-* Sjónrænt
- + Athugun úr báti: mörk þarabreiðanna metin eftir litabreytingum á botni (allt að 10 m sýnileiki)
- + Athugun með neðansjávardróna
-* Á korti
- + Áætluð útbreiðsla staðfestra þarabreiða frá strandlínu að 10 m dýptarlínum
+
+  * Sjónrænt
+    + Athugun úr báti: mörk þarabreiðanna metin eftir litabreytingum á botni (undir 10 m sýnileiki)
+    + Athugun með neðansjávardróna
+  * Á korti
+    + Áætluð útbreiðsla staðfestra þarabreiða frá strandlínu að 10 m dýptarlínum
 
 
 
@@ -213,7 +209,7 @@ Hér maá sjá kort af sýnatökuferðum og myndir af þarabreiðum. Einnig eru 
 
 
 
-# Stekkjavík og Sölvabakki 2019
+# Stekkjavík og Sölvabakki {-}
 *Rannsóknarfólk: undirritaður* Hlekkur á möppu með [myndskeiðum](https://www.dropbox.com/sh/pcobg1zexnhsm9r/AABOmyp9I87GbuT6qs3SRxWDa?dl=0)
 
 Farið var á Zodiac inn að Sölvabakka föstudaginn 21. júní. Báturinn er í eigu björgunarsveitrinnar Stráka á Skagaströnd, Einn maður um borð og var Trident kafbáturinn meðferðis. Kafbáturinn var settur niður á þremur stöðum á milli Stekkjavíkur og Sölvabakka.  Botninn er annars vegar sendinn með grjóti hér og þar eða hins vegar klapparbotn. *Laminaria sp.* mynda þarabreiður nær samfellt milli stöðva 1 og 3. en talsvert afrán er á þara vegna ígulkerja svo að klappir geta verið berar.
@@ -235,8 +231,8 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l",cex=14)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-myndir=c("skjol/skogar/sk2/stodvar/st1/sk2-st1B.jpg","skjol/skogar/sk2/stodvar/st2/sk2-st2.jpeg","skjol/skogar/sk2/stodvar/st3/ekkert.png")
-map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14, popup = popupImage(myndir))
+myndir=c("https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk2/stodvar/st1/sk2-st1B.jpg","https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk2/stodvar/st2/sk2-st2.jpeg","https://github.com/harkanatta/ssnv_trident/blob/master/skjol/skogar/sk2/stodvar/st3/ekkert.png?raw=true")
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14, popup = popupImage(myndir,width="500"))
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
@@ -270,7 +266,7 @@ knitr::include_graphics("skjol/skogar/sk2/stodvar/st2/sk2-st2B.jpeg")
 ```
 
 
-# Hamarsbúð og Sauðá 2019
+# Hamarsbúð og Sauðá {-}
 *Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.* [Hlekkur á möppu með myndskeiðum](https://www.dropbox.com/sh/rodn0wueqkjfz1i/AAALWpzgA0WOKZcknNURKd1Ia?dl=0)
 
 [Stöð 1](https://www.dropbox.com/s/esjsqxal7ehehof/Trident-Jul-11-125153-HQ.mp4?dl=0),
@@ -293,7 +289,8 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
+myndir=c("https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk3/stodvar/st1/sk3-st1.jpg","https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk3/stodvar/st2/samsett.jpeg","https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk3/stodvar/st3/samsett.jpeg")
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14, popup = popupImage(myndir,width="500"))
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 ```
 
@@ -318,7 +315,7 @@ knitr::include_graphics(c("skjol/skogar/sk3/stodvar/st3/samsett.jpeg"))
 
 Landslag er svipað meðfram öllu vestanverðu Vatnsnesinu og má búast við þarabreiðum eftir því öllu. Þarabreiðurnar náðu þó ekki nema 500 metra frá landi sem er í kringum 10 metra dýptarmörkin.
 
-# Hofsgrunn 15. júlí 2019
+# Hofsgrunn {-}
 *Rannsóknarfólk: undirritaður og Arnar Viggósson náttúruunnandi.*
 [Hlekkur á möppu með myndskeiðum](https://www.dropbox.com/sh/5e86jwymrmedy8i/AAC7B73fHdewmccaKuRMGQEHa?dl=0)
 
@@ -344,7 +341,12 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
+myndir=c("https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk4/stodvar/st1/samsett.jpeg",
+         "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk4/stodvar/st2/sk4-st2.jpeg",
+         "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk4/stodvar/st3/sk4-st3.jpeg",
+         "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk4/stodvar/st4/sk4-st4.jpeg",
+         "https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/skjol/skogar/sk4/stodvar/st5/sk4-st5.jpeg")
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14, popup = popupImage(myndir,width="500"))
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 ```
@@ -369,7 +371,7 @@ knitr::include_graphics("skjol/skogar/sk4/stodvar/st5/sk4-st5.jpeg")
 
 
 
-# Hindisvík 2019
+# Hindisvík {-}
 *Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.*
 Báturinn var sjósettur í fjöru í Hindisvík á norðanverðu Vatnsnesi. Snögglega bætti í sjóinn og því var siglt í land eftir skamma stund við sýnatökur. Aðeins náðist að mynda tvær stöðvar (eina stöð almennilega og örlítið aðra) en þarabreiða var er eflaust í allri víkinni.
 
@@ -393,7 +395,9 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 #map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid,type="l") + mapview(stodvar)
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
+myndir=c("https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk5/stodvar/st1/sk5-st1.jpg",
+         "https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk5/stodvar/st2/sk5-st2.jpg")
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14, popup = popupImage(myndir,width="500"))
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
@@ -412,12 +416,12 @@ knitr::include_graphics("skjol/skogar/sk5/stodvar/st2/sk5-st2.jpg")
 ```
 
 
-# Hafnir 25. sept 2019
+# Hafnir {-}
 *Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.*
 Báturinn var settur út í á þar sem Rekavatn rennur út í Kaldranavík í landi Hafna norður á Skaga. Fjörugrjótið er óheppilegra þar sem það er svo vel fægt. Veður var eins og best verður á kosið.
 
 [Hlekkur á möppu með myndskeiðum](https://www.dropbox.com/sh/4nzz6q9ox6jxbez/AADUS3o9DfCDqZ2d34S2_Mxaa?dl=0)
-`anicon::cia("dropbox.png", animate="wrench", anitype="parent-hover", ltext="Hello!", size=3)`
+
 [Stöð 1](https://www.dropbox.com/s/jrk61lhb4umxqam/Trident-Sep-25-130013-HQ.mp4?dl=0),
 [Stöð 2](https://www.dropbox.com/s/m8ft8ny9v6x1tq4/Trident-Sep-25-132106-HQ.mp4?dl=0)
 [Stöð 3](https://www.dropbox.com/s/fo2b8nwml3gf5a7/Trident-Sep-25-133854-HQ.mp4?dl=0)
@@ -437,65 +441,66 @@ pal <- colorRampPalette(brewer.pal(length(unique(Dypi@data$MinZ)), "Blues"))
 #map <- mapview(Dypi,map.types="Esri.WorldImagery",zcol="MinZ",color = pal) + mapview(leid) + mapview(stodvar,type="l")
 library(magrittr)
 img <- "https://github.com/harkanatta/ssnv_trident/blob/master/graphs/tvologo.jpg?raw=true"
-map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14)
+myndir=c("https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk6/stodvar/st1/sk6-st1B.jpeg","https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk6/stodvar/st2/sk6-st2.jpeg","https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk6/stodvar/st3/sk6-st3.jpeg","https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk6/stodvar/st4/sk6-st4.jpeg","https://harkanatta.github.io/ssnv_trident/skjol/skogar/sk6/stodvar/st5/sk6-st5.jpeg")
+map <- mapview(stodvar,map.types="Esri.WorldImagery",cex=14, popup = popupImage(myndir,width="500"))
 map %>% leafem::addLogo(img, width = '20%', height = '25%',offset.y = 20,offset.x = 80,alpha = 0.7) %>% leaflet.extras::addFullscreenControl(pseudoFullscreen = T)
 
 
 
 ```
 
-```{r mynd-sk-sex-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 0**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-eitt,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 0**. Kalkþörungar, rauðþörungar og fleira sem ekki var mögulegt að bera kennsl á.'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st1/sk6-st1.jpeg")
 
 ```
 
-```{r mynd-sk-sex-stod-eittB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 0**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-eittB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 0**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) á 18 m dýpi niður á rúmlega 20 m dýpi í bakgrunni.'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st1/sk6-st1B.jpeg")
 
 ```
 
-```{r mynd-sk-sex-stod-eittC,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-eittC,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 0**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st1/sk6-st1C.jpeg")
 
 ```
 
 
-```{r mynd-sk-sex-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-tvo,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st2/sk6-st2.jpeg")
 
 ```
 
-```{r mynd-sk-sex-stod-thrju,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 3**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-thrju,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og beltisþari (*Laminaria saccharina*)'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st3/sk6-st3.jpeg")
 
 ```
 
-```{r mynd-sk-sex-stod-thrjuB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 3**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-thrjuB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 2**. Beltisþari (*Laminaria saccharina*) á sandbotni.'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st3/sk6-st3B.jpeg")
 
 ```
 
 
-```{r mynd-sk-sex-stod-fjogur,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 4**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-fjogur,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 3**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st4/sk6-st4.jpeg")
 
 ```
 
-```{r mynd-sk-sex-stod-fimm,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 5**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
+```{r mynd-sk-sex-stod-fimm,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='**Stöð 4**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)'}
 
 knitr::include_graphics("skjol/skogar/sk6/stodvar/st5/sk6-st5.jpeg")
 
 ```
 
 
-# Finnsstaðanes 2018
+# Finnsstaðanes {-}
 *Rannsóknarfólk: undirritaður Karin Zech, Guðmundur Björnsson fyrrverandi grásleppuveiðimaður og Bjarni Ottósson frá björgunarsveitinni.*
 
 
@@ -531,7 +536,7 @@ knitr::include_graphics("myndir/bettina/fleirikorallarogulva.jpg")
 
 
 
-# Forkönnun við Eyrina 2019 (kajak)
+# Forkönnun við Eyrina (kajak) {-}
 *Rannsóknarfólk: undirritaður* Hlekkur á möppu með [myndskeiðum](https://www.dropbox.com/sh/oqnsnftqeks0mie/AAAI7vYZcEy5o78c5YaTVXn0a?dl=0)
 
 Þann 11. júní 2019 fór undirritaður á kajak frá Hrafná innan við Skagaströnd til að kanna mörk þaraskógarins á milli Eyrarinnar og Skeljatanga (sjá kort). Daginn eftir var farið út á sama svæði, á kajak, með drónann til að athuga tegundasamsetningu þarans og vöxt. Kajakinn var bundinn við netabauju til að reka ekki og myndir teknar með drónanum í kringum baujuna. 
@@ -640,7 +645,7 @@ knitr::include_graphics("skjol/skogar/sk1/stodvar/st1/sk1-st1.jpg")
 
 ```
 
-```{r mynd-sk-eitt-stod-eittB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='*L. digitata* eða *L. borealis*, *Alaria esculenta* og *L. saccharina*'}
+```{r mynd-sk-eitt-stod-eittB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE, fig.cap='Hrossa- eða stórþari (*L. digitata* eða *L. borealis*), Marinkjarni (*Alaria esculenta*) og beltisþari (*L. saccharina*)'}
 
 knitr::include_graphics("skjol/skogar/sk1/stodvar/st1/sk1-st1B.jpg")
 
@@ -698,8 +703,8 @@ knitr::include_graphics("myndir/feltkort/konnun.png")
 ```
 
 # Viðauki 2 {#v2}
-## Bilanir á kafbát
-Trident kafbáturinn barst okkur 20. júní 2018 og bilaði eftir tvær kafanir. Framleiðandinn sendi okkur nýjan eftir að hafa kannað orsök bilunarinnar sem virtist vera galli sem hann tók ábyrgð á. Nýja eintakið kom til okkar þann 8. ágúst. Tölvupóstsamskiptin við OpenRov sem framleiddi tækið eru látin fylgja á pdf-formi skýrslunnar. Athugið að tölvupóstsamskiptin eru í öfugri tímaröð.
+## Bilanir á kafbáti
+Trident kafbáturinn barst okkur 20. júní 2018 og bilaði eftir tvær kafanir. Framleiðandinn sendi okkur nýjan eftir að hafa kannað orsök bilunarinnar sem virtist vera galli sem hann tók ábyrgð á. Nýja eintakið kom til okkar þann 8. ágúst. Tölvupóstsamskiptin við OpenRov sem framleiddi tækið eru látin fylgja á pdf-formi skýrslunnar ([hér er hlekkur á skjalið](https://github.com/harkanatta/ssnv_trident/blob/master/skjol/bilanir.pdf)). Athugið að tölvupóstsamskiptin eru í öfugri tímaröð.
 \includepdf[pages={1-11}, scale=0.8]{skjol/bilanir.pdf}
 
 <!--chapter:end:appendix.Rmd-->
