@@ -1,0 +1,713 @@
+\documentclass[icelandic,]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Könnun á þaraflóru í Húnaflóa, með tilliti til nýtingar},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[shorthands=off,main=icelandic]{babel}
+\else
+  \usepackage{polyglossia}
+  \setmainlanguage[]{icelandic}
+\fi
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{{Könnun á þaraflóru í Húnaflóa, með tilliti til nýtingar}}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{{Valtýr Sigurðsson}
+BioPol ehf.}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{8. október 2019}
+
+\usepackage{booktabs}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage{t1enc}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\listoftables
+\listoffigures
+\hypertarget{inngangur}{%
+\chapter{Inngangur}\label{inngangur}}
+
+\hypertarget{tilgangur-verkefnis}{%
+\section{Tilgangur verkefnis}\label{tilgangur-verkefnis}}
+
+Tilgangur verkefnisins er að gera forkönnun á nýtingu þaraskóga við austanverðan Húnaflóa, með áherslu á stórþara (\emph{Laminaria hyperborea}), hrossaþara (\emph{Laminaria digitata}) og beltisþara (\emph{Laminaria saccharina}). Verkefninu er skipt upp í sýnatökur annars vegar og hins vegar áætlun um heildarmagn þara á svæðinu sem má vinna með sjálfbærum hætti.
+
+\hypertarget{ari-til-nytingar-a-islandi}{%
+\section{Þari til nýtingar á Íslandi}\label{ari-til-nytingar-a-islandi}}
+
+Þari er samheiti yfir nokkrar tegundir brúnþörunga sem finnast á grunnsævi (allt að 30 metrum) í klappar, hnullunga og grjótfjörum við landið\textsuperscript{\protect\hyperlink{ref-karl1997}{1}}. Þari er nýttur í yfir 30 löndum og er árleg uppskera yfir 800 þúsund tonn á heimsvísu\textsuperscript{\protect\hyperlink{ref-Monagail2017}{2}}. Fjölsykrur sem finna má í brúnþörungum eru mikið notaðar sem bindiefni í matvælum, snyrtivörum, lyfjaiðnaði, textíliðnaði og markskonar öðrum iðnaði. Hrossaþari (\emph{L. digitata}) og beltisþari (\emph{L. saccarina}) henta vel í framleiðslu á fjölsykrum en Þörungaverksmiðjan hf. á Reykhólum hefur þurrkað og malað hrossaþara og selt erlendis til alginatframleiðslu (alginat er fjölsykra). Einnig hefur fyrirtækið Purity Herbs á Akureyri notað hrossaþara frá Þörungaverksmiðjunni í sinni framleiðslu\textsuperscript{\protect\hyperlink{ref-Jonsdottir2011}{3}}.
+
+\hypertarget{um-araskoga}{%
+\section{Um þaraskóga}\label{um-araskoga}}
+
+Stórir þaraskógar finnast á grunnsævi á hærri breiddargráðum við lægri hita en 20°C. Uppistaða skóganna eru brúnþörungar af ættkvísl (\emph{genus}) \emph{Laminaria} og þá helst hrossaþari (\emph{L. digitata}), stórþari (\emph{L. hyperborea}), beltisþari (\emph{L. saccharina}) og marinkjarni (\emph{Alaria esculenta} (L.)). Þari þarf fast undilag til að festa sig við, grjót eða klappir, og þrífst því ekki á sand- eða leirbotni. Þari þarfnast sólarljóss sem orkugjafa sem takmarkar útbreiðslu þara niður fyrir ákveðið dýpi sem getur verið misjafnlega mikið eftir skyggni sjávarins en þari hefur fundist á 30 metra dýpi hér við land\textsuperscript{\protect\hyperlink{ref-karl1997}{1}}.
+
+Notast hefur verið við loftmyndir úr gervihnöttum og dróna til að meta þangútbreiðslu\textsuperscript{\protect\hyperlink{ref-Gunnarsson2017}{4}} en vandasamt er að meta útbreiðslu þara þar sem loftmyndir í nægjanlegum gæðum eru af skornum skammti og oft er glampi af haffletinum eða skýjahula sem þekur myndirnar.
+
+Þari á sér náttúrulega óvini eins og ígulker og snigla og því er ekki endilega þara að finna á stöðum sem þó fullnægja kröfum um festu og dýpi. Þarabreiður geta líka rifnað upp í miklu roki og erfitt er fyrir þarann að setjast aftur þar sem ígulkerin skrapa upp græðlinga. Þess vegna var ákveðið að kanna þarabreiður með neðansjávarmyndavél, fjarstýrðum kafbáti (\ref{fig:trident}), í þessu verkefni.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.35\linewidth]{myndir/Trident_litil} \includegraphics[width=0.35\linewidth]{myndir/karin} 
+
+}
+
+\caption{Tækið sem fékkst fyrir styrkféð frá SSNV kallast [Trident](https://www.openrov.com/) og er framleitt af OpenRov. Hér sést Karin Zech starfsmaður BioPol rýna á skjáinn á fjarstýringunni að tækinu og Guðmundur Björnsson fyrrv. grásleppuveiðimaður var okkur til halds og trausts. }\label{fig:trident}
+\end{figure}
+
+\hypertarget{framkvmd}{%
+\section{Framkvæmd}\label{framkvmd}}
+
+\hypertarget{synatokur}{%
+\subsection{Sýnatökur}\label{synatokur}}
+
+Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á (\protect\hyperlink{v1}{sjá Viðauka 1}). Í þessum leiðöngrum fékkst gróf yfirsýn og voru nokkur svæði valin til frekari skoðunar seinna með neðansjávarmyndavél, fjarstýrðum kafbáti (\ref{fig:trident}).
+
+Þann 21. Júní 2018 var farið í fyrstu myndatökurnar en það vildi svo óheppilega til að kafbáturinn bilaði í þeirri ferð. Nýtt tæki var fengið rúmum mánuði seinna 8. ágúst (\protect\hyperlink{v2}{sjá Viðauka 2}). Sýnatökum var svo haldið áfram seinna um haustið og sumarið á eftir.
+
+Eftir því sem verkefnið þróaðist var ljóst að búast má við þéttum þarabreiðum frá fjörumörkum niður að 15 m dýpi en sjaldan neðar (þó sást gisin þarabreiða á Skallarifi við Hafnir á um 20 m dýpi). Það var því ákveðið að minnka fyrirhuguð sýnatökusvæði og notast við Zodiac gúmmíbát sem fékkst leigður af björgunarsveitinni Strönd á Skagaströnd. Alls var farið í 6 leiðangra á gúmmíbáti (\protect\hyperlink{results}{sjá myndatökur 1}):
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Staður & Dagsetning & Athugasemd\tabularnewline
+\midrule
+\endhead
+Skagstr.-Ytriey & 2. ágúst 2017 & Forskoðun\tabularnewline
+Kálfsh.vík - Skagstr. & 15. ágúst 2017 & Forskoðun\tabularnewline
+Finnstaðanes & 6. september 2018 & Myndataka\tabularnewline
+Eyrin & 11. júní 2019 & Myndataka\tabularnewline
+Stekkjavík & 21. júní 2019 & Myndataka\tabularnewline
+Sauðá & 11. júlí 2019 & Myndataka\tabularnewline
+Hofsgrunn & 15. júlí 2019 & Myndataka\tabularnewline
+Hindisvík & 21. ágúst 2019 & Myndataka\tabularnewline
+Hafnir & 25. sept 2019 & Myndataka\tabularnewline
+\bottomrule
+\end{longtable}
+
+Við forkönnun á kajak var komið auga á áhugaverða staði sem voru kannaðir með drónanum en að auki nokkra staði sem ekki gafst færi á að kanna með drónanum en höfðu að geyma þarabreiður. Flatarmál þarabreiðanna er lauslega metið með eftirfarandi hætti
+
+\begin{itemize}
+\tightlist
+\item
+  Sjónrænt
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Athugun úr báti: mörk þarabreiðanna metin eftir litabreytingum á botni (undir 10 m sýnileiki)
+  \item
+    Athugun með neðansjávardróna
+  \end{itemize}
+\item
+  Á korti
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Áætluð útbreiðsla staðfestra þarabreiða frá strandlínu að 10 m dýptarlínum
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{urvinnsla}{%
+\subsection{Úrvinnsla}\label{urvinnsla}}
+
+Notast var við kortagrunn frá Landhelgisgæslunni (dýptarlínur) og Landmælingum Íslands (\href{https://atlas.lmi.is/LmiData/index.php?id=8613727663752}{strandlína}) til að meta flatarmál þarabreiða í austanverðum Húnaflóa frá strandlínu að 10 m dýpi. Flákar voru búnir til í kortagerðarforritinu \href{https://www.qgis.org/en/site/}{QGIS} en útreikningar gerðir í reikniforritinu \href{https://www.r-project.org/}{R}.
+
+\hypertarget{niurstour}{%
+\subsection{Niðurstöður}\label{niurstour}}
+
+\hypertarget{umfang-sva-me-araskogum}{%
+\subsubsection{Umfang svæða með þaraskógum}\label{umfang-sva-me-araskogum}}
+
+Umfang svæða sem innihalda þarabreiður er ekki gott að meta með mikilli nákvæmni. Svæðið frá strandlínu að 10 m dýpi (sýnt á kortinu hér að neðan) er 189 Km² meðfram Vatnsnesi (frá Vallaá að Hvítserki) og 122 Km² meðfram Skagaströnd. Botngerðir svæðanna eru misjafnar og ólíkar innbyrðis eins og búast má við á svo stóru svæði og því er þaragróður misþéttur. Sumstaðar eru sker eða björg og annarstaðar er botninn sendinn svo þarinn hefur ekki festu.
+
+Svæðin þar sem þéttar þarabreiður voru á (sem kannaðar voru með myndatöku eða komið auga á úr bát) eru sýndar á kortinu hér að neðan. Flatarmál svæðanna er sýnt í töflu \ref{tab:skogar} en einnig má smella á flákana og punktana á kortinu til að sjá upplýsingar og myndir.
+
+\begin{table}[t]
+
+\caption{\label{tab:skogar}Stærð þaraskóga á Skagaströnd og Vatnsnesi}
+\centering
+\begin{tabular}{lr}
+\toprule
+Stadur & km²\\
+\midrule
+Bjargarbjörg & 4\\
+Eyrin & 7\\
+Finnsstaðanes & 4\\
+Hamarsbúð & 12\\
+Hindisvík & 13\\
+\addlinespace
+Hofsgrunn & 5\\
+Kálfshamarsvík & 10\\
+Landsendi & 3\\
+Sölvabakki & 9\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{center}\includegraphics[width=1\linewidth]{ssnv_files/figure-latex/yfirlitskort-1} \end{center}
+
+\hypertarget{mat-a-hugsanlegri-uppskeru}{%
+\subsubsection{Mat á hugsanlegri uppskeru}\label{mat-a-hugsanlegri-uppskeru}}
+
+Könnun á uppskeru og framleiðni þara hefur ekki verið framkvæmd í Húnaflóa en borið saman við rannsóknir sem gerðar voru í Breiðafirði má áætla að vöxtur þara sé á mjög breiðu bili þar sem dýpi og staðsetning í firðinum eru stærstu áhrifaþættirnir. Möguleg heildarframleiðni þaraskóganna áðurnefndu er tekin saman í töflu \ref{tab:frml} hér að neðan. Athuga skal að hér eru mjög breið vikmörk.
+
+\begin{table}[t]
+
+\caption{\label{tab:frml}Framleiðni valdra þarabreiða í Húnaflóa miðað við mismunandi vaxtarhraða kg/m²/ári}
+\centering
+\begin{tabular}{lrrrrr}
+\toprule
+  & 0.8 & 1.8 & 2.8 & 3.8 & 4.8\\
+\midrule
+Hamarsbúð & 5 & 11 & 17 & 23 & 29\\
+Hindisvík & 5 & 11 & 18 & 24 & 30\\
+Hofsgrunn & 2 & 4 & 6 & 8 & 11\\
+Hofsgrunn & 0 & 1 & 2 & 2 & 3\\
+Finnsstaðanes & 2 & 4 & 6 & 8 & 10\\
+\addlinespace
+Landsendi & 1 & 3 & 5 & 6 & 8\\
+Bjargarbjörg & 1 & 3 & 5 & 7 & 9\\
+Kálfshamarsvík & 4 & 9 & 13 & 18 & 23\\
+Sölvabakki & 4 & 8 & 12 & 17 & 21\\
+Eyrin & 3 & 6 & 10 & 13 & 17\\
+\addlinespace
+Samtals (þús. t) & 27 & 60 & 94 & 126 & 161\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{umrur}{%
+\subsubsection{Umræður}\label{umrur}}
+
+Í þessari könnun voru fýsileg svæði til þarasláttar könnuð.
+
+Þarabreiðurnar fylla ekki alls staðar út í svæðin sem upptalin eru hér að ofan en loftmyndir frá Google og Bing frá árunum 2015-2017 gefa til kynna er vöxtur talsvert gisinn. Það er þó ekki hægt að treysta á slíkar loftmyndir enda ekki hlutverk þeirra að skyggnast undir yfirborð sjávar. Þarasvæðin geta teygt sig niður á meira dýpi en notast var við við þetta mat. Á mynd \ref{fig:svaediogskogar} sjást til dæmis dökkir flekkir sem ríma ágætlega við staðsetningu þara en svo eru\\
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{myndir/feltkort/hamarsb} \includegraphics[width=0.5\linewidth]{myndir/feltkort/eyri} 
+
+}
+
+\caption{Svæðin sem metin eru í þessari skýrslu sem þarasvæði eru hér borin saman við þéttustu hluta þarabreiðanna eins og þær koma fram á loftmyndum frá Google og Bing}\label{fig:svaediogskogar}
+\end{figure}
+
+\hypertarget{results}{%
+\chapter{Myndatökur}\label{results}}
+
+Hér maá sjá kort með sýnatökustöðvum og myndir af þarabreiðum. Einnig eru hlekkir á myndskeið.
+
+Kortin eru gagnvirk og þau geta fyllt út í skjáinn. Það má smella á punktana á kortunum til að fá einkennandi myndir frá hverri sýnatökustöð.
+
+\textbf{Smellið á örina til hægri til að fara á fyrstu sýnatökustöðina eða notið valkostina vinstra megin.}
+
+\hypertarget{stekkjavik-og-solvabakki}{%
+\chapter*{Stekkjavík og Sölvabakki}\label{stekkjavik-og-solvabakki}}
+\addcontentsline{toc}{chapter}{Stekkjavík og Sölvabakki}
+
+\emph{Rannsóknarfólk: undirritaður} Hlekkur á möppu með \href{https://www.dropbox.com/sh/pcobg1zexnhsm9r/AABOmyp9I87GbuT6qs3SRxWDa?dl=0}{myndskeiðum}
+
+Farið var á Zodiac inn að Sölvabakka föstudaginn 21. júní. Báturinn er í eigu björgunarsveitrinnar Stráka á Skagaströnd, Einn maður um borð og var Trident kafbáturinn meðferðis. Kafbáturinn var settur niður á þremur stöðum á milli Stekkjavíkur og Sölvabakka. Botninn er annars vegar sendinn með grjóti hér og þar eða hins vegar klapparbotn. \emph{Laminaria sp.} mynda þarabreiður nær samfellt milli stöðva 1 og 3. en talsvert afrán er á þara vegna ígulkerja svo að klappir geta verið berar.
+
+\href{https://www.dropbox.com/s/6eh4ntihn256yt7/Trident-Jun-21-115230-HQ.mp4?dl=0}{Stöð 1},
+\href{https://www.dropbox.com/s/y25irxzi70btw6s/Trident-Jun-21-122032-HQ.mp4?dl=0}{Stöð 2},
+\href{https://www.dropbox.com/s/u30ejcqt9aw63d2/Trident-Jun-21-133207-HQ.mp4?dl=0}{Stöð 3}.
+
+\begin{center}\includegraphics[width=1\linewidth]{ssnv_files/figure-latex/mapviewskB-1} \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk2/stodvar/st1/sk2-st1} 
+
+}
+
+\caption{Talsvert af „þangskeggi“ eða sambýli af sepum hveldýra (*Hydrozoa*) en einnig sést í öðuskel (*Modiola modiolus*) ofl. }\label{fig:mynd-sk-tvo-stod-eitt}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk2/stodvar/st1/sk2-st1B} 
+
+}
+
+\caption{Stöð eitt á korti við Stekkjavík og Sölvabakka. *Laminaria* tegundir mynda þarabreiður (*L. digitata* eða *L. borealis*). }\label{fig:mynd-sk-tvo-stod-eittB}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk2/stodvar/st2/sk2-st2} 
+
+}
+
+\caption{Myndir frá stöð eitt á korti við Stekkjavík og Sölvabakka. Botninn er sendinn með grjóti hér og þar. Sandmaðkshraukar (*Arenicola marina*) og kúfskeljar (*Arctica islandica*) í miklu magni.}\label{fig:mynd-sk-tvo-stod-tvo}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk2/stodvar/st2/sk2-st2B} 
+
+}
+
+\caption{Myndir frá stöð eitt á korti við Stekkjavík og Sölvabakka. Botninn er sendinn með grjóti og klöppum hér og þar. Skeljabrot og leifar af kísilþörungum (*Lithothamnion*) sem ígulker hafa líklega skrapað upp.}\label{fig:mynd-sk-tvo-stod-tvoB}
+\end{figure}
+
+\hypertarget{hamarsbu-og-saua}{%
+\chapter*{Hamarsbúð og Sauðá}\label{hamarsbu-og-saua}}
+\addcontentsline{toc}{chapter}{Hamarsbúð og Sauðá}
+
+\emph{Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.} \href{https://www.dropbox.com/sh/rodn0wueqkjfz1i/AAALWpzgA0WOKZcknNURKd1Ia?dl=0}{Hlekkur á möppu með myndskeiðum}
+
+\href{https://www.dropbox.com/s/esjsqxal7ehehof/Trident-Jul-11-125153-HQ.mp4?dl=0}{Stöð 1},
+\href{https://www.dropbox.com/s/ytjy4sl1n0ozmjb/Trident-Jul-11-131216-HQ.mp4?dl=0}{Stöð 2},
+\href{https://www.dropbox.com/s/5qn3lgbcrxlnc7y/Trident-Jul-11-135213-HQ.mp4?dl=0}{Stöð 3}.
+
+Báturinn var sjósettur í fjöru við Hamarsbúð á vestanverðu Vatnsnesi norðan við Hvammstanga þann 11. júlí 2019. Siglt var í 3-4 kílómetra norður að fyrirætluðum sýnatökustað og virtist vera nokkuð samfelld þarabreiða alla leiðina.
+
+\begin{center}\includegraphics[width=0.75\linewidth]{ssnv_files/figure-latex/mapviewskC-1} \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk3/stodvar/st1/sk3-st1} 
+
+}
+
+\caption{**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)}\label{fig:mynd-sk-thrju-stod-eitt}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk3/stodvar/st2/samsett} 
+
+}
+
+\caption{**Stöð 2**. Hrossaþara- eða stórþarabreiður (*Laminaria digitata* eða *Laminaria hyperborea*) (A, B og C). Einnig sést Marinkjarni (Alaria esculenta) og beltisþari (*Saccharina latissima*) á mynd A.}\label{fig:mynd-sk-thrju-stod-tvo}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk3/stodvar/st3/samsett} 
+
+}
+
+\caption{**Stöð 3**. Mynd A og B: Þarabreiðurnar enda og við taka (líklega) breiður af hveldýrum af ættkvísl (e. genus) *Sertularia*. Mynd C: Hveldýrasambýli af tegundinni *Sertularia cupressina* (mynd: [4028mdk09](https://commons.wikimedia.org/w/index.php?curid=9550879) CC eftir-SA 3.0)).}\label{fig:mynd-sk-thrju-stod-thrju-hydrur}
+\end{figure}
+
+Landslag er svipað meðfram öllu vestanverðu Vatnsnesinu og má búast við þarabreiðum eftir því öllu. Þarabreiðurnar náðu þó ekki nema 500 metra frá landi sem er í kringum 10 metra dýptarmörkin.
+
+\hypertarget{hofsgrunn}{%
+\chapter*{Hofsgrunn}\label{hofsgrunn}}
+\addcontentsline{toc}{chapter}{Hofsgrunn}
+
+\emph{Rannsóknarfólk: undirritaður og Arnar Viggósson náttúruunnandi.}
+\href{https://www.dropbox.com/sh/5e86jwymrmedy8i/AAC7B73fHdewmccaKuRMGQEHa?dl=0}{Hlekkur á möppu með myndskeiðum}
+
+Zodiak-bátur björgunarsveitar Skagastrandar var sjósettur í Kálfshamarsvík (sjá kort) og siglt var út í punkt á miðju Hofsgrunninu. Þar var Trident-kafbáturinn settur niður fimm sinnum.
+
+\href{https://www.dropbox.com/s/mykfrmg4j4nzcam/Trident-Jul-15-124522-HQ.mp4?dl=0}{Stöð 1},
+\href{https://www.dropbox.com/s/hrgywt28fjk64mg/Trident-Jul-15-130236-HQ.mp4?dl=0}{Stöð 1B},
+\href{https://www.dropbox.com/s/gdrtgzs2q3nn6w0/Trident-Jul-15-131557-HQ.mp4?dl=0}{Stöð 2},
+\href{https://www.dropbox.com/s/vv1bobcfzhwtl06/Trident-Jul-15-132942-HQ.mp4?dl=0}{Stöð 3},
+\href{https://www.dropbox.com/s/oyqqueli4qow0mo/Trident-Jul-15-134800-HQ.mp4?dl=0}{Stöð 4},
+\href{https://www.dropbox.com/s/d1dp5a0bftm3z5n/Trident-Jul-15-140418-HQ.mp4?dl=0}{Stöð 5}.
+
+\begin{center}\includegraphics[width=0.75\linewidth]{ssnv_files/figure-latex/mapviewskD-1} \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk4/stodvar/st1/samsett} 
+
+}
+
+\caption{**Stöð 1**. Hrossaþara- eða stórþarabreiður (*Laminaria digitata* eða *Laminaria hyperborea*).}\label{fig:mynd-sk-fjogur-stod-eitt}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk4/samsett} 
+
+}
+
+\caption{**Stöð 2,3,4**. Hrossaþara- eða stórþarabreiður (*Laminaria digitata* eða *Laminaria hyperborea*).}\label{fig:mynd-sk-fjogur-stodvar-tvo-4}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk4/stodvar/st5/sk4-st5} 
+
+}
+
+\caption{**Stöð 5**. Á 40 m dýpi er enginn þari.}\label{fig:mynd-sk-fjogur-stod-fimm}
+\end{figure}
+
+\hypertarget{hindisvik}{%
+\chapter*{Hindisvík}\label{hindisvik}}
+\addcontentsline{toc}{chapter}{Hindisvík}
+
+\emph{Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.}
+Báturinn var sjósettur í fjöru í Hindisvík á norðanverðu Vatnsnesi. Snögglega bætti í sjóinn og því var siglt í land eftir skamma stund við sýnatökur. Aðeins náðist að mynda tvær stöðvar (eina stöð almennilega og örlítið aðra) en þarabreiða var er eflaust í allri víkinni.
+
+\href{https://www.dropbox.com/sh/t3wzev18jphbmjo/AADBKgpTNiw3lhvZZJeEHMNva?dl=0}{Hlekkur á möppu með myndskeiðum}
+
+\href{https://www.dropbox.com/s/ficlrkk5m1c1yf5/Trident-Aug-21-140709-HQ.mp4?dl=0}{Stöð 1},
+\href{https://www.dropbox.com/s/lmrkuw6daol7bco/Trident-Aug-21-134347-HQ.mp4?dl=0}{Stöð 2}
+
+\begin{center}\includegraphics[width=1\linewidth]{ssnv_files/figure-latex/mapviewskE-1} \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk5/stodvar/st1/sk5-st1} 
+
+}
+
+\caption{**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)}\label{fig:mynd-sk-fimm-stod-eitt}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk5/stodvar/st2/sk5-st2} 
+
+}
+
+\caption{**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)}\label{fig:mynd-sk-fimm-stod-tvo}
+\end{figure}
+
+\hypertarget{hafnir}{%
+\chapter*{Hafnir}\label{hafnir}}
+\addcontentsline{toc}{chapter}{Hafnir}
+
+\emph{Rannsóknarfólk: undirritaður og Einar Þorleifsson starfsmaður Náttúrustofu Norðurlands vestra.}
+Báturinn var settur út í á þar sem Rekavatn rennur út í Kaldranavík í landi Hafna norður á Skaga. Fjörugrjótið er óheppilegra þar sem það er svo vel fægt. Veður var eins og best verður á kosið.
+
+\href{https://www.dropbox.com/sh/4nzz6q9ox6jxbez/AADUS3o9DfCDqZ2d34S2_Mxaa?dl=0}{Hlekkur á möppu með myndskeiðum}
+
+\href{https://www.dropbox.com/s/jrk61lhb4umxqam/Trident-Sep-25-130013-HQ.mp4?dl=0}{Stöð 1},
+\href{https://www.dropbox.com/s/m8ft8ny9v6x1tq4/Trident-Sep-25-132106-HQ.mp4?dl=0}{Stöð 2}
+\href{https://www.dropbox.com/s/fo2b8nwml3gf5a7/Trident-Sep-25-133854-HQ.mp4?dl=0}{Stöð 3}
+\href{https://www.dropbox.com/s/jttuihpf6lfluny/Trident-Sep-25-140023-HQ.mp4?dl=0}{Stöð 4}
+\href{https://www.dropbox.com/s/lxkz7ccg38qg3lp/Trident-Sep-25-141235-HQ.mp4?dl=0}{Stöð 5}
+
+\begin{center}\includegraphics[width=1\linewidth]{ssnv_files/figure-latex/mapviewskF-1} \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk6/stodvar/st1/sk6-st1} 
+
+}
+
+\caption{**Stöð 0**. Kalkþörungar, rauðþörungar og fleira sem ekki var mögulegt að bera kennsl á.}\label{fig:mynd-sk-sex-stod-eitt}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk6/stodvar/st1/sk6-st1B} 
+
+}
+
+\caption{**Stöð 0**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) á 18 m dýpi niður á rúmlega 20 m dýpi í bakgrunni.}\label{fig:mynd-sk-sex-stod-eittB}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk6/stodvar/st1/sk6-st1C} 
+
+}
+
+\caption{**Stöð 0**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)}\label{fig:mynd-sk-sex-stod-eittC}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk6/stodvar/st2/sk6-st2} 
+
+}
+
+\caption{**Stöð 1**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)}\label{fig:mynd-sk-sex-stod-tvo}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk6/stodvar/st3/sk6-st3} 
+
+}
+
+\caption{**Stöð 2**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*) og beltisþari (*Laminaria saccharina*)}\label{fig:mynd-sk-sex-stod-thrju}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk6/stodvar/st3/sk6-st3B} 
+
+}
+
+\caption{**Stöð 2**. Beltisþari (*Laminaria saccharina*) á sandbotni.}\label{fig:mynd-sk-sex-stod-thrjuB}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk6/stodvar/st4/sk6-st4} 
+
+}
+
+\caption{**Stöð 3**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)}\label{fig:mynd-sk-sex-stod-fjogur}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk6/stodvar/st5/sk6-st5} 
+
+}
+
+\caption{**Stöð 4**. Hrossaþari eða stórþari (*Laminaria digitata* eða *Laminaria hyperborea*)}\label{fig:mynd-sk-sex-stod-fimm}
+\end{figure}
+
+\hypertarget{finnsstaanes}{%
+\chapter*{Finnsstaðanes}\label{finnsstaanes}}
+\addcontentsline{toc}{chapter}{Finnsstaðanes}
+
+\emph{Rannsóknarfólk: undirritaður Karin Zech, Guðmundur Björnsson fyrrverandi grásleppuveiðimaður og Bjarni Ottósson frá björgunarsveitinni.}
+
+Þann 6. september 2018 var svæðið úti fyrir Finnstaðanesi kannað með kafbátnum. Farið var á báti björgunarsveitarinnar Strandar við fjórða mann. Myndskeið voru tekin upp frá 3 til 21 metra dýpis. Ferðin tók um eina og hálfa klukkustund en þá var undirritaður orðinn sjóveikur af því að stara á skjáinn og einnig var bilun í báðum mótorum bátsins. Myndefnið var greint af rannsóknarfólki BioPol til að bera kennsl á helstu tegundir í þaraskóginum.
+
+Út frá myndskeiðunum sem tekin voru úti fyrir Finnstaðanesi mátti greina þarategundirnar stórþara (\emph{L. hyperborea}) og hrossaþara (\emph{L. digitata}) en einnig mátti sjá aðrar tegundir nytjaþörunga bregða fyrir t.d. söl \emph{Palmaria palmata} (sjá mynd \ref{fig:thari}). Einnig fannst reimaþang (\emph{Himanthalia elongata}) í litlu magni og aðrar brúnþörungategundir sem finnast í fjörum og eru því aðgengilegar á fjöru.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{myndir/bettina/Laminaria-Palmaria-epiphytes} 
+
+}
+
+\caption{Söl og þari (*laminaria* sp.) með ógreindum ásætum}\label{fig:thari}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{myndir/bettina/Laminaria} 
+
+}
+
+\caption{Stórþara (*l. hyperborea*) og hrossaþara (*l. digitata) er erfitt að greina í sundur}\label{fig:tharieitt}
+\end{figure}
+
+Kalkþörungar \ref{fig:tharitveir}, sem eru rauðir botnþörungar (\emph{Corallinaceae}) og minna á kóralla og eru vel þekktir frá sumum svæðum við Skagaströnd af sjómönnum bæjarins voru sjáanlegir á öllum stöðvum (nema þar sem ekki var kafað niður á botn (Hindisvík)) í þessari rannsókn. Hátt í 10 milljónir rúmmetra af kalkþörungaseti eru í Miðfirði og Hrútafirði\textsuperscript{\protect\hyperlink{ref-thors}{5}}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{myndir/bettina/Ulva_Corallinaceae_two_species} 
+
+}
+
+\caption{Maríusvunta og botnþörungar}\label{fig:tharitveir}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{myndir/bettina/fleirikorallarogulva} 
+
+}
+
+\caption{Maríusvunta og botnþörungar}\label{fig:tharithrir}
+\end{figure}
+
+\hypertarget{forkonnun-vi-eyrina-kajak}{%
+\chapter*{Forkönnun við Eyrina (kajak)}\label{forkonnun-vi-eyrina-kajak}}
+\addcontentsline{toc}{chapter}{Forkönnun við Eyrina (kajak)}
+
+\emph{Rannsóknarfólk: undirritaður} Hlekkur á möppu með \href{https://www.dropbox.com/sh/oqnsnftqeks0mie/AAAI7vYZcEy5o78c5YaTVXn0a?dl=0}{myndskeiðum}
+
+Þann 11. júní 2019 fór undirritaður á kajak frá Hrafná innan við Skagaströnd til að kanna mörk þaraskógarins á milli Eyrarinnar og Skeljatanga (sjá kort). Daginn eftir var farið út á sama svæði, á kajak, með drónann til að athuga tegundasamsetningu þarans og vöxt. Kajakinn var bundinn við netabauju til að reka ekki og myndir teknar með drónanum í kringum baujuna.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{ssnv_files/figure-latex/mapviewskA-1} 
+
+}
+
+\caption{Siglt var á kajak upp að bauju við grásleppunet (sem notuð var sem ankeri) á milli Eyrarinnar og Skeljatanga rétt innan við Skagaströnd. Tekin voru myndskeið til að greina tegundir þara og meta vöxt hans.}\label{fig:mapviewskA}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk1/stodvar/st1/sk1-st1} 
+
+}
+
+\caption{Grásleppunet í þaraskógi *L. digitata* eða *L. borealis* }\label{fig:mynd-sk-eitt-stod-eitt}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{skjol/skogar/sk1/stodvar/st1/sk1-st1B} 
+
+}
+
+\caption{Hrossa- eða stórþari (*L. digitata* eða *L. borealis*), Marinkjarni (*Alaria esculenta*) og beltisþari (*L. saccharina*)}\label{fig:mynd-sk-eitt-stod-eittB}
+\end{figure}
+
+\hypertarget{v1}{%
+\chapter{Viðauki 1}\label{v1}}
+
+\hypertarget{orungaleiangur-a-sjokajak-forkonnun---glosur-ur-feltbok}{%
+\section{\texorpdfstring{Þörungaleiðangur á sjókajak (forkönnun) - \emph{Glósur úr feltbók}}{Þörungaleiðangur á sjókajak (forkönnun) - Glósur úr feltbók}}\label{orungaleiangur-a-sjokajak-forkonnun---glosur-ur-feltbok}}
+
+\hypertarget{ari-mefram-strondinni-fra-skagastrond-a-ytriey}{%
+\subsection{Þari meðfram ströndinni frá Skagaströnd að Ytriey}\label{ari-mefram-strondinni-fra-skagastrond-a-ytriey}}
+
+\begin{verbatim}
+- Heiðskýrt
+- Lítill vindur.
+\end{verbatim}
+
+Talsverð þaraþekja var á um eins km bili frá Hrafná hálfa leið að Vindhælisstapa. En í sitthvorumegin við Vindhælisstapa var sendinn botn með litlum þara. Frá Hafursstaðakoti að Ytriey var þaragróður gisinn (\emph{allt morandi í lunda við Ytriey og mikið af sel})
+
+\textbf{\emph{2. ágúst 2017. Ólafur Arason og Valtýr Sigurðsson}}
+
+\hypertarget{ari-fra-kalfshamarsvik-a-bnum-landsenda-kortlagur.-lagt-af-sta-fra-kalfshamarsvik-klukkan-1030-og-siglt-suur.}{%
+\subsection{Þari frá Kálfshamarsvík að bænum Landsenda kortlagður. Lagt af stað frá Kálfshamarsvík klukkan 10:30 og siglt suður.}\label{ari-fra-kalfshamarsvik-a-bnum-landsenda-kortlagur.-lagt-af-sta-fra-kalfshamarsvik-klukkan-1030-og-siglt-suur.}}
+
+\begin{verbatim}
+- Létt skýjað og þoka, þokan var þó meiri inn til landsins.
+- Lítill vindur.
+- Háfjara var klukkan 09:20.
+\end{verbatim}
+
+Upphafspunktur er merktur á kort 1 \ref{fig:kort1}. Frá upphafspunkti að stuðlabergi (kort 1) var sendinn botn og lítið um gróður. Svæði 1 var með þéttan og breiðan Hrossaþara- og Beltisþaraskóg og marinkjarna.
+
+Á svæði 2 var snöggdjúpt og skógurinn ekki jafn breiður og á svæði 1.
+
+Svæði 3 var við lítinn foss, þar var brimsamara og sendinn botn og lítið um þaragróður.
+
+Út frá svæðinu milli 3 og 4 var lítið sker, sem var umlukið hrossa og beltisþara og marinkjarna skógi. Skerið sjálft var svo með fjöruþara (kló og klapparþang ofl.).
+
+Svæði 4 er með hrossa- og beltisþaraskóg og marinkjarna, þykkt og þéttleiki svipaður og á svæði númer 2.
+
+Svæði 5 er í fýlavarpi. Norðan Bjargarbjarga er mjög straumþungt og djúpt og lítill gróður, milli bjarganna og við suðurhluta Bjargarbjarga er grynning þar sem beltis og hrossaþari finnast. Hærra í fjörunni finnst klóþang og klapparþang. Við fossinn er straumhart og lítill gróður.
+
+Svæði 6 var með þunnt lag af Marínkjarna og kerlingahári eða þangskeggi og var sá þari mjög gisinn.
+
+Svæði 7 var við há björg og var botninn mjög snöggdjúpur og því nánast enginn þaragróður. Við Stráksnesið var grynning og þar var gróður mjög svipaður og á svæði 6.
+
+Svæði 8 var með þunnan og gisinn marínkjarna líkt og svæði 6.
+
+Svæði 9 var brimsamara og dýpkaði snöggt og því var lítill sem enginn gróður þar. Á svæðum 6 til 8 var lítið um kennileyti og því getur staðsetning þeirra svæða verið ónákæm Komið var í land á Landsenda klukkan 14:40.
+
+Skipt var um rannsóknarmann við Landsenda. Vindur jókst þegar leið á daginn en var undir 10 m/s (miðað við mælingar á Skagastrandarhöfn) þegar mest lét. Undiralda var nokkur svo að kajakinn snerist með hliðina í ölduna þegar var stoppað. Hvor rannsóknarmaður um sig sigldi um 10 km meðfram ströndinni. Lítið var um hrossa-/beltisþaraskóg á milli Landsenda og Skagastrandar. Sunnan við Landsenda var þéttur hrossaþarakógur og marinkjarni, á u.þ.b. 500 m kafla, og líka við Finnstaðanes. Svæðin voru annars gisin eða ber nema uppi við sker og þar sem grjót var á botni. Uppi í fjörum voru klappar- og bóluþangsbreiður.
+
+\textbf{\emph{15. ágúst 2017. Ólafur Arason og Valtýr Sigurðsson}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{myndir/feltkort/konnun} 
+
+}
+
+\caption{Könnunarsvæði úr kajakferðum í ágúst 2017}\label{fig:kort1}
+\end{figure}
+
+\hypertarget{v2}{%
+\chapter{Viðauki 2}\label{v2}}
+
+\hypertarget{bilanir-a-kafbati}{%
+\section{Bilanir á kafbáti}\label{bilanir-a-kafbati}}
+
+Trident kafbáturinn barst okkur 20. júní 2018 og bilaði eftir tvær kafanir. Framleiðandinn sendi okkur nýjan eftir að hafa kannað orsök bilunarinnar sem virtist vera galli sem hann tók ábyrgð á. Nýja eintakið kom til okkar þann 8. ágúst. Tölvupóstsamskiptin við OpenRov sem framleiddi tækið eru látin fylgja á pdf-formi skýrslunnar (\href{https://github.com/harkanatta/ssnv_trident/blob/master/skjol/bilanir.pdf}{hér er hlekkur á skjalið}). Athugið að tölvupóstsamskiptin eru í öfugri tímaröð.
+\includepdf[pages={1-11}, scale=0.8]{skjol/bilanir.pdf}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-karl1997}{}%
+1. Þari eftir Karl Gunnarsson. Í: \emph{Þari}. Reykjavík: Námsgagnastofnun og Hafrannsóknastofnun; 1997. \url{https://www1.nams.is/hafid/pdf/thari.pdf}.
+
+\leavevmode\hypertarget{ref-Monagail2017}{}%
+2. Monagail MM, Cornish L, Morrison L, Araújo R, Alan T. Sustainable harvesting of wild seaweed resources. \emph{European Journal of Phycology}. 2017;52(4):371--390. doi:\href{https://doi.org/10.1080/09670262.2017.1365273}{10.1080/09670262.2017.1365273}
+
+\leavevmode\hypertarget{ref-Jonsdottir2011}{}%
+3. Jónsdóttir EM. \emph{Fjörunytjar á Suðurnesjum}.; 2011.
+
+\leavevmode\hypertarget{ref-Gunnarsson2017}{}%
+4. Gunnarsson K, Bourgos J, Gunnarsdóttir L, Egilsdóttir S. Klóþang í Breiðafirði útbreiðsla og magn. 2017. \url{https://www.althingi.is/altext/erindi/146/146-1208.pdf}.
+
+\leavevmode\hypertarget{ref-thors}{}%
+5. Kjartan Thors. Útbreiðsla og magn kalkþörungasets á Vestfjörðum og í Húnaflóa. \emph{Náttúrufræingurinn}. 2018;88 (3--4):115--124.
+
+
+\end{document}

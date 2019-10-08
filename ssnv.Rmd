@@ -205,7 +205,11 @@ knitr::include_graphics(c("myndir/feltkort/hamarsb.png","myndir/feltkort/eyri.pn
 <!--chapter:end:index.Rmd-->
 
 # Myndatökur {#results}
-Hér maá sjá kort af sýnatökuferðum og myndir af þarabreiðum. Einnig eru hlekkir á myndskeið. **Smellið á örina til hægri**
+Hér maá sjá kort með sýnatökustöðvum og myndir af þarabreiðum. Einnig eru hlekkir á myndskeið.  
+
+Kortin eru gagnvirk og þau geta fyllt út í skjáinn. Það má smella á punktana á kortunum til að fá einkennandi myndir frá hverri sýnatökustöð.
+
+**Smellið á örina til hægri til að fara á fyrstu sýnatökustöðina eða notið valkostina vinstra megin.**
 
 
 

@@ -1,0 +1,7 @@
+base
+mapview
+RColorBrewer
+magrittr
+sp
+raster
+plyr
