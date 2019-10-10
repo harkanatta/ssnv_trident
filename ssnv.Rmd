@@ -1,6 +1,6 @@
 ---
 title: <span style="font-size:125%; font-family:Roboto; font-style:normal">Þarabreiður í Húnaflóa</span> 
-subtitle: <span style="font-size:100%; font-family:Roboto; font-style:normal">Athugun á nýtingu á sjálfbæran hátt - Skýrsla fyrir ssnv</span>
+subtitle: <span style="font-size:100%; font-family:Roboto; font-style:normal">Athugun á nýtingu á sjálfbæran hátt - Skýrsla fyrir SSNV</span>
 author:  |
   <span class="noem">Valtýr Sigurðsson</span>
 date: "`r format(Sys.time(), '%e. %B %Y')`"

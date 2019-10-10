@@ -11,10 +11,10 @@ bookdown::gitbook:
                <img src="myndir/zeropoint_logo.jpg" style="width:25%; padding:0px 0; display:block; margin: 0 auto;" alt="BioPol logo">
             </a>
             <a href="https://www.nnv.is/">
-               <img src="myndir/nnvlogoJPEG.jpeg" style="width:25%; padding:0px 0; display:block; margin: 0 auto;" alt="nnv logo">
+               <img src="https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/myndir/nnvlogoJPEG.jpeg" style="width:25%; padding:0px 0; display:block; margin: 0 auto;" alt="nnv logo">
             </a>
             <a href="http://www.ssnv.is/">
-               <img src="myndir/ssnv_logo.jpeg" style="width:25%; padding:0px 0; display:block; margin: 0 auto;" alt="ssnv logo">
+               <img src="https://raw.githubusercontent.com/harkanatta/ssnv_trident/master/myndir/ssnv_logo.jpeg" style="width:25%; padding:0px 0; display:block; margin: 0 auto;" alt="ssnv logo">
             </a>
          </li>
 
