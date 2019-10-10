@@ -1,8 +1,8 @@
 ---
-title: <span style="font-size:125%; font-family:Roboto; font-style:normal">Þarabreiður í Húnaflóa - Athugun á nýtingu á sjálfbæran hátt</span>
+title: <span style="font-size:125%; font-family:Roboto; font-style:normal">Þarabreiður í Húnaflóa</span> 
+subtitle: <span style="font-size:100%; font-family:Roboto; font-style:normal">Athugun á nýtingu á sjálfbæran hátt - Skýrsla fyrir ssnv</span>
 author:  |
   <span class="noem">Valtýr Sigurðsson</span>
-  <a href='https://biopol.is/'>BioPol ehf.</a>
 date: "`r format(Sys.time(), '%e. %B %Y')`"
 site: bookdown::bookdown_site
 lot: yes
