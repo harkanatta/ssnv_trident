@@ -224,7 +224,7 @@ Farið var á Zodiac inn að Sölvabakka föstudaginn 21. júní. Báturinn er �
 [Stöð 3](https://www.dropbox.com/s/u30ejcqt9aw63d2/Trident-Jun-21-133207-HQ.mp4?dl=0).
 
 
-```{r mapviewskB,echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE}
+```{r mapviewskB,echo = FALSE,	fig.align = "center",	out.width='100%',	message = FALSE,	warning = FALSE,	error=FALSE}
 
 
 library(mapview)
@@ -283,7 +283,7 @@ Báturinn var sjósettur í fjöru við Hamarsbúð á vestanverðu Vatnsnesi no
 
 
 
-```{r mapviewskC}
+```{r mapviewskC,	fig.align = "center",	out.width='100%'}
 
 library(mapview)
 Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk3/klipp.shp", verbose = FALSE)
@@ -334,7 +334,7 @@ Zodiak-bátur björgunarsveitar Skagastrandar var sjósettur í Kálfshamarsvík
 [Stöð 4](https://www.dropbox.com/s/oyqqueli4qow0mo/Trident-Jul-15-134800-HQ.mp4?dl=0),
 [Stöð 5](https://www.dropbox.com/s/d1dp5a0bftm3z5n/Trident-Jul-15-140418-HQ.mp4?dl=0).
 
-```{r mapviewskD}
+```{r mapviewskD,	fig.align = "center",	out.width='100%'}
 
 library(mapview)
 Dypi<- rgdal::readOGR(dsn="skjol/skogar/sk4/klipp.shp", verbose = FALSE)
