@@ -63,7 +63,7 @@ knitr::include_graphics(c("myndir/Trident_litil.jpg","myndir/karin.jpg"))
 # Framkvæmd
 
 
-# Sýnatökur
+## Sýnatökur
 Ákveðið var að hefja forkönnun á hluta svæðisins á sjókajak dagana 2. og 15. ágúst 2017. Í fyrri ferðinni var farið á tveimur kajökum frá Skagaströnd til Eyjareyjar (um 6 km leið) en í seinni ferðinni var farið var frá Kálfshamarsvík til Skagastrandar (um 20 km leið) og skiptust þá tveir ræðarar á ([sjá Viðauka 1](#v1)). Í þessum leiðöngrum fékkst gróf yfirsýn og voru nokkur svæði valin til frekari skoðunar seinna með neðansjávarmyndavél, fjarstýrðum kafbáti (\@ref(fig:trident)).
 
 Þann 21. Júní 2018 var farið í fyrstu myndatökurnar en það vildi svo óheppilega til að kafbáturinn bilaði í þeirri ferð. Nýtt tæki var fengið rúmum mánuði seinna 8. ágúst ([sjá Viðauka 2](#v2)). Sýnatökum var svo haldið áfram seinna um haustið og sumarið á eftir.
@@ -201,7 +201,7 @@ knitr::include_graphics(c("myndir/feltkort/hamarsb.png","myndir/feltkort/eyri.pn
 
 
 
-Í þessari athugun voru fýsileg svæði til þarasláttar könnuð með það að markmiði að skrásetja umfang þeirra. Það markmið náðist ekki þar sem þessi svæði eru umfangsmeiri en rannsakanda sást fyrir. Nú hafa þarabreiðurnar verið myndaðar svo að áhugasamir geti séð að hverju er gengið á hverju svæði fyrir sig einnig verður hægt að nota þessar upplýsingar í áframhaldandi rannsóknir; til dæmis á magni uppskeru og framleiðni.
+Í þessari athugun voru fýsileg svæði til þarasláttar könnuð með það að markmiði að skrásetja umfang þeirra. Það markmið náðist ekki þar sem þessi svæði eru umfangsmeiri en rannsakanda sást fyrir. Nú hafa þarabreiðurnar verið myndaðar svo að áhugasamir geti séð að hverju er gengið á hverju svæði fyrir sig, einnig verður hægt að nota þessar upplýsingar í áframhaldandi rannsóknir; til dæmis á magni uppskeru og framleiðni.
 
 <!--chapter:end:index.Rmd-->
 
