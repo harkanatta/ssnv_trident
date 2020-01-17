@@ -302,7 +302,7 @@ knitr::include_graphics("skjol/skogar/sk6/stodvar/st5/sk6-st5.jpeg")
 *Rannsóknarfólk: undirritaður Karin Zech, Guðmundur Björnsson fyrrverandi grásleppuveiðimaður og Bjarni Ottósson frá björgunarsveitinni.*
 
 
-Þann 6. september 2018 var svæðið úti fyrir Finnstaðanesi kannað með kafbátnum. Farið var á báti björgunarsveitarinnar Strandar við fjórða mann. Myndskeið voru tekin upp frá 3 til 21 metra dýpis. Ferðin tók um eina og hálfa klukkustund en þá var undirritaður orðinn sjóveikur af því að stara á skjáinn og einnig var bilun í báðum mótorum bátsins. Myndefnið var greint af rannsóknarfólki BioPol til að bera kennsl á helstu tegundir í þaraskóginum.
+Þann 6. september 2018 var svæðið úti fyrir Finnstaðanesi kannað með kafbátnum. Farið var á báti björgunarsveitarinnar Strandar við fjórða mann. Myndskeið voru tekin upp frá 3 til 21 metra dýpis. Ferðin tók um eina og hálfa klukkustund en þá var undirritaður orðinn sjóveikur af því að stara á skjáinn og einnig var bilun í báðum mótorum bátsins. Myndefnið var greint af rannsóknarfólki BioPol (ber þar helst að nefna Bettínu, Dr. Bettina Scholz) til að bera kennsl á helstu tegundir í þaraskóginum.
 
 ```{r setup-options}
  knitr::opts_chunk$set(	echo = FALSE,	fig.align = "center",	message = FALSE,	warning = FALSE,	out.width='100%',	error=FALSE)
